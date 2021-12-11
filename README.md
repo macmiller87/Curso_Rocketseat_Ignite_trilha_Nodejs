@@ -1,4 +1,4 @@
-Este curso ira mostrar as atividades durante a minha trilha de estudos do curso da rockeseat Ignite na trilha de Nodejs
+Este repositório ira mostrar as atividades durante a minha trilha de estudos do curso da rockeseat Ignite na trilha de Nodejs
 
 # Atividades: :pencil: :man_technologist:
 # Módulo Chapter 1 Conceitos
