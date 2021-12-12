@@ -19,4 +19,4 @@
 - [] Não deve ser possível buscar extrato em uma conta não existente.
 - [] Não deve ser possível fazer saque em uma conta não existente.
 - [] Não deve ser possível excluir uma conta não existente.
-- [] Não deve ser possível fazer saque qundo o saldo for insuficiente.
+- [] Não deve ser possível fazer saque qundo o saldo for insuficiente. 
