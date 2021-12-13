@@ -74,18 +74,18 @@ app.post("/account", (req, res) =>{
 
     });
 
-    return res.status(201).send(); // Aqui está sendo setado o parametro res.status(201).send() , para que não vai retornar nehuma informação, ele só vai mostrar que foi criado o dado pelo status(201) o status(201) e para quando o dado foi criado com sucesso.
+    return res.status(201).send(); // Aqui está sendo setado o parametro res.status(201).send() , que não vai retornar nehuma informação, ele só vai mostrar que foi criado o dado pelo status(201) o status(201) e para quando o dado foi criado com sucesso.
 
 });
 
 
 // Método para buscar o extrato bancário do cliente, e método para não ser possível buscar o extrato em uma conta não existente.
-app.get("/statement", verifyIfExistsAccountCPF, (req, res) => { // Aqui foi passado o tipo de parametro (Route Params) através do :cpf, que vai ser o identificador -->  app.get("/statement/:cpf" // Seria esse formato se fosse usar a funçã (params).
+app.get("/statement", verifyIfExistsAccountCPF, (req, res) => { // Aqui foi passado o tipo de parametro (Route Params) através do :cpf, que vai ser o identificador -->  app.get("/statement/:cpf" // Seria esse formato se fosse usar a função (params).
 
     // const { cpf } = req.headers; //  Aqui está sendo usado a função (headers) que não é necessario passar o id, que no caso seria o cpf, ele vai buscar o dado pelo cabeçario/header.
 
-    // // const { cpf } = req.params; // Aqui está sendo usado a função (params) obrigatorio pela definição que foi passada acima, para poder pegar o dado so cpf.
-    // // app.get("/statement/:cpf" // Seria esse formato se fosse usar a funçã (params).
+    // // const { cpf } = req.params; // Aqui está sendo usado a função (params) obrigatorio pela definição que foi passada acima, para poder pegar o dado do cpf.
+    // // app.get("/statement/:cpf" // Seria esse formato se fosse usar a função (params).
 
     // const customer = customers.find(customer => customer.cpf === cpf); // aqui esta sendo usado a função (find) para procurar dentro do array customers, se tem o cpf igual.
 
@@ -107,7 +107,7 @@ app.get("/statement", verifyIfExistsAccountCPF, (req, res) => { // Aqui foi pass
 app.post("/deposit", verifyIfExistsAccountCPF, (req, res) => {
 
     const { description, amount } = req.body;
-    const { customer } = req; // Aqui está sendo requerido o customer, que está sendo verificado e tartado no app.post().
+    const { customer } = req; // Aqui está sendo requerido o customer, que está sendo verificado e tratado no app.post().
 
     // Aqui está sendo criada a operação de credito, com os parâmetros necessários
     const statementOperation = {
@@ -118,7 +118,7 @@ app.post("/deposit", verifyIfExistsAccountCPF, (req, res) => {
         type: "credit" // Aqui é o tipo do depósito, aqui no caso só tem a opção de credit, mas poderia ter mais.
     };
 
-    customer.statement.push(statementOperation); // Aqui está sendo inserido dentro as informações da const statementOperation dentro do array customer.
+    customer.statement.push(statementOperation); // Aqui está sendo inserido dentro do array customer, as informações da const statementOperation.
 
     return res.status(201).send(); // Aqui está sendo enviado peal função send() o status(201) se tudo der certo.
 });
@@ -144,7 +144,7 @@ app.post("/withdraw", verifyIfExistsAccountCPF, (req, res) => {
         type: "debit",
     };
 
-    customer.statement.push(statementOperation); // Aqui está sendo passado para o customer as informações do statementOperation
+    customer.statement.push(statementOperation); // Aqui está sendo passado para o customer as informações do statementOperation.
     return res.status(201).send(); 
 
 });
@@ -158,9 +158,9 @@ app.get("/statement/date", verifyIfExistsAccountCPF, (req, res) => {
 
     const { date } = req.query; // Aqui está sendo usado a função (query), que é usada para listar tipos de dados, nesse caso as datas.
 
-    const dateFormat = new Date(date + " 00:00"); // Aqui está sendo recuperada a data da transação e formatada com essa mascara 00:00, para poder recuper qualquer horário.
+    const dateFormat = new Date(date + " 00:00"); // Aqui está sendo recuperada a data da transação e formatada com essa mascara 00:00, para poder recuperar qualquer horário.
 
-    const statement = customer.statement.filter((statement) => statement.created_at.toDateString() === new Date(dateFormat).toDateString()); // Aqui está sendo comparado se a data que foi pega no customer, é igual a data formatada acima no dateFormat. 
+    const statement = customer.statement.filter((statement) => statement.created_at.toDateString() === new Date(dateFormat).toDateString()); // Aqui está sendo comparado se a data que foi obtida no customer, é igual a data formatada acima no dateFormat. 
 
 
     return res.json(statement); // Aqui vai retornar o statement acima com a data formatada no JSON.
@@ -172,7 +172,7 @@ app.get("/statement/date", verifyIfExistsAccountCPF, (req, res) => {
 app.put("/account", verifyIfExistsAccountCPF, (req, res) => {
 
     const { name } = req.body; // Aqui está sendo recuperado o nome.
-    const { customer } = req; // // Aqui está sendo recuperado os dados os dados do cpf, que está sendo verificado no método function verifyIfExistsAccountCPF.
+    const { customer } = req; // // Aqui está sendo recuperado os dados do cpf, que está sendo verificado no método function verifyIfExistsAccountCPF.
 
     customer.name = name;
 
@@ -204,11 +204,11 @@ app.delete("/delete/account", verifyIfExistsAccountCPF, (req, res) => {
 // Método para retornar/consultar o balance.
 app.get("/balance",  verifyIfExistsAccountCPF, (req, res) => {
 
-    const {customer } = req; // Aqui está sendo recuperado os dados os dados do cpf, que está sendo verificado no método function verifyIfExistsAccountCPF.
+    const {customer } = req; // Aqui está sendo recuperado os dados do cpf, que está sendo verificado no método function verifyIfExistsAccountCPF.
 
-    const balance = getBalance(customer.statement); // Aqui está sendo recuperado as informções da function getBalance(), e pegando toda a movimentação do credit e debit, através do customer.statement.
+    const balance = getBalance(customer.statement); // Aqui está sendo recuperado as informações da function getBalance(), e pegando toda a movimentação do credit e debit, através do customer.statement.
 
-    return res.json(balance); // Aqui está sendo retornado apenas as informações que foi pego acima na const balance, e passado para o JSON.
+    return res.json(balance); // Aqui está sendo retornado apenas as informações que foi obtida acima na const balance, e passado para o JSON.
 });
 
 
