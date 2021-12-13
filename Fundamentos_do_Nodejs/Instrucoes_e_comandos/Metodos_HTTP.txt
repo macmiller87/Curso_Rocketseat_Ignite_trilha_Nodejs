@@ -1,7 +1,0 @@
-Métodos HTTP
-
-- Get    -> Buscar uma informação dentro do servidor.
-- Post   -> Inserir uma informação no servidor.
-- Put    -> Alterar uma informação no servidor.
-- Patch  -> Alterar uma informação no servidor.
-- Delete -> Deletar uma informação no servidor.
