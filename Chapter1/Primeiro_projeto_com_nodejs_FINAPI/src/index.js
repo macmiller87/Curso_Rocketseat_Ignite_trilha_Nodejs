@@ -1,4 +1,4 @@
-const express = require('express'); 
+const express = require('express');  
 const { v4: uuidv4 } = require("uuid"); // Aqui está sendo requirido o pacote uuid para gerar id único, o (v4) gera id randomicos. 
 
 const app = express();
