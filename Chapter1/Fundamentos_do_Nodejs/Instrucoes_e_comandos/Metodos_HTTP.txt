@@ -4,4 +4,4 @@ Métodos HTTP
 - Post   -> Inserir uma informação no servidor.
 - Put    -> Alterar uma informação no servidor.
 - Patch  -> Alterar uma informação no servidor.
-- Delete -> Deletar uma informação no servidor.
+- Delete -> Deletar uma informação no servidor. 
