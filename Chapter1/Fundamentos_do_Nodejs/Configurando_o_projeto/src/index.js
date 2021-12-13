@@ -1,5 +1,5 @@
 const express = require('express'); // Aqui estamos requerindo o framework express.
-const app = express(); // Aqui estamos setando na const app. 
+const app = express(); // Aqui estamos setando na const app.  
 
 
 app.use(express.json()); // Essa função está referenciando a passagen de parametro entre o app.post e a rota no insomnia.

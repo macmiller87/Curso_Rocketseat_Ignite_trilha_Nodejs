@@ -9,7 +9,7 @@
   "keywords": [],
   "author": "Macmiller Duarte de Andrade",
   "license": "ISC",
-  "scripts": { 
+  "scripts": {  
     "dev": "nodemon src/index.js"
   },
   "dependencies": {
