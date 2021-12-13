@@ -1,0 +1,6 @@
+Dependencias e pacotes no Nodejs
+
+- Esse comando instala o Nodemon na aplicação, deve ser instalado via terminal.
+- Com esse pacote não é necessário mais ter que reiniciar o start da aplicação via terminal a toda atualização nos arquivos, ele vai atualizar a aplicação automatico.
+
+# npm i nodemon -D

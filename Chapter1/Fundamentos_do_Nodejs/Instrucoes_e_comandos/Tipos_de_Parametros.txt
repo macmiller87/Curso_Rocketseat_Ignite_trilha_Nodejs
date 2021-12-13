@@ -1,0 +1,5 @@
+Tipos de Parâmetros
+
+- Route Params -> Identificar um recurso para Editar / Deletar .
+- Query Params -> Paginação / Filtro .
+- Body  Params -> Os objetos Inserçaõ / Alteração (JSON) -> utilizar sempre como JSON .
