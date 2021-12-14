@@ -1,4 +1,4 @@
-Este repositório ira mostrar as atividades durante a minha trilha de estudos do curso da rockeseat Ignite na trilha de Nodejs
+Este repositório ira mostrar as atividades durante a minha trilha de estudos do curso da rockeseat Ignite na trilha de Nodejs.
 
 # Atividades: :pencil: :man_technologist:
 # Módulo Chapter 1 Conceitos
@@ -31,3 +31,5 @@ Este repositório ira mostrar as atividades durante a minha trilha de estudos do
 - [Listar extrato bancário por data](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter1/Primeiro_projeto_com_nodejs_FINAPI/src/index.js)
 - [Atualizar conta](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter1/Primeiro_projeto_com_nodejs_FINAPI/src/index.js)
 - [Remover conta](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter1/Primeiro_projeto_com_nodejs_FINAPI/src/index.js) 
+
+# Desafio: Conceitos do Node.js
