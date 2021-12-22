@@ -8,7 +8,7 @@
 
 - Foi utilizado o Nodejs/javascript como linguagem para desenvolver o Backend.
 - framework/biblioteca Express, UUID, Cors e Nodemon.
-- Foi utilizado a ferramenta/software Insominia para trabalhar com as requisições HTTP.
+- Foi utilizado a ferramenta/software Insomnia para trabalhar com as requisições HTTP.
 
 ## Requisitos
 
@@ -24,7 +24,7 @@
 ## Regras de negócio
 
 - [x] Não deve ser possível cadastrar um name e um username já existente.
-- [x] Não ser possível listar as tarefas de um usúario que não existe.
+- [x] Não deve ser possível listar as tarefas de um usúario que não existe.
 - [x] Não deve ser possível Atualizar os dados da lista de tarefas criada, (name) e (username) que possua um ID diferente . 
 - [x] Não deve ser possível Atualizar os dados da lista de tarefas criada, o status (done) que não possuir o mesmo ID.
-- [x] Não Deve ser possível deletar a lista de tarefas que não possua o mesmo ID.
+- [x] Não deve ser possível deletar a lista de tarefas que não possua o mesmo ID.
