@@ -33,3 +33,5 @@ Este repositório ira mostrar as atividades durante a minha trilha de estudos do
 - [Remover conta](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter1/Primeiro_projeto_com_nodejs_FINAPI/src/index.js) 
 
 # Desafio: Conceitos do Node.js
+
+- [Projeto API TODO Conceitos do Nodejs](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter1/Conceitos_do_nodejs)
