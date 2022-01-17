@@ -38,4 +38,4 @@ Este repositório ira mostrar as atividades durante a minha trilha de estudos do
 
 # Desafio: Trabalhando com Middlewares
 
--[Projeto API TODO versão 2 Trabalhando com Middlewares](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter1/Trabalhando_com_middlewares)
+- [Projeto API TODO versão 2 Trabalhando com Middlewares](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter1/Trabalhando_com_middlewares)
