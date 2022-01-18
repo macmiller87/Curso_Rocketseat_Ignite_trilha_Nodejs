@@ -39,3 +39,14 @@ Este repositório ira mostrar as atividades durante a minha trilha de estudos do
 # Desafio: Trabalhando com Middlewares
 
 - [Projeto API TODO versão 2 Trabalhando com Middlewares](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter1/Trabalhando_com_middlewares)
+
+# Módulo Chapter 2 Typescript
+
+- Introdução
+- Introdução Typescript
+- [Criando projeto com Typescript](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter2/Criando_projeto_com_typescript)
+- [Adicionando os tipos](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter2/Criando_projeto_com_typescript)
+- [Definindo os parâmetros obrigatórios](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter2/Criando_projeto_com_typescript)
+
+# Módulo Chapter 2 Criando API com NodeJS
+
