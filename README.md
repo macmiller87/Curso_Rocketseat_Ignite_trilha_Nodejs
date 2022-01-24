@@ -51,8 +51,8 @@ Este repositório ira mostrar as atividades durante a minha trilha de estudos do
 # Módulo Chapter 2 Criando API com NodeJS
 
 - [Configurando ts-node-dev](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/package.json)
-- [ESLint e Prettier]
-- [Debugando a aplicação]
+- ESLint e Prettier
+- Debugando a aplicação
 - [Criando categoria](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/routes/categories.routes.ts)
 - [Inserindo ID com uuid](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/model/category.ts)
 - [Inserindo tipagem para categoria](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/repositories/CategoriesRepository.ts)
