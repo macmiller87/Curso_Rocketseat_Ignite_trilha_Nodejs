@@ -62,6 +62,6 @@ Este repositório ira mostrar as atividades durante a minha trilha de estudos do
 
 # Módulo Chapter 2 S.O.L.I.D
 
-- [Entendendo o S.O.L.I.D]
-- [Utilizando o princípio de responsabilidade única (SRP)]
-- [Utilizando o princípio da substituição de Liskov (LSP)]
+- [Entendendo o S.O.L.I.D]()
+- [Utilizando o princípio de responsabilidade única (SRP)]()
+- [Utilizando o princípio da substituição de Liskov (LSP)]()
