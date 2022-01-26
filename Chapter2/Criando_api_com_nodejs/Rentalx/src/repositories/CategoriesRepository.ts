@@ -1,12 +1,7 @@
 import { Category } from '../model/category'; // Aqui está sendo importando a função (Category), para poder trabalhar com as definições da classe (Category) do arquivo (category.ts).
+import { ICategoriesRepository, ICreateCategoryDTO } from './ICategoriesRepository';
 
-// Aqui foi criado a interface e está recebendo e setando o tipo dos atributos.
-interface ICreateCategoryDTO {
-    name: string;
-    description: string;
-}
-
-class CategoriesRepository {
+class CategoriesRepository implements ICategoriesRepository {
 
     private categories: Category[]; // Aqui está sendo setado no array (categories) como private , o modelo esperado dos atributos da classe (Category), que esta na (pasta model) => arquivo (category.ts).
 
@@ -16,7 +11,7 @@ class CategoriesRepository {
     }
 
     // Aqui foi criado a função create() que vai criar os objetos do array (category), e também foi desestruturado os parametros (name, description), e está recebendo a interface (ICreateCategoryDTO), e passando seu método (Void), que significa vazio.
-    create({ name, description } : ICreateCategoryDTO) : void {
+    create({ name, description }: ICreateCategoryDTO) : void {
 
         const category = new Category();
     
