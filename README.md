@@ -62,6 +62,6 @@ Este repositório ira mostrar as atividades durante a minha trilha de estudos do
 
 # Módulo Chapter 2 S.O.L.I.D
 
-- [Entendendo o S.O.L.I.D]()
-- [Utilizando o princípio de responsabilidade única (SRP)]()
-- [Utilizando o princípio da substituição de Liskov (LSP)]()
+- Entendendo o S.O.L.I.D
+- [Utilizando o princípio de responsabilidade única (SRP)](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/services)
+- [Utilizando o princípio da substituição de Liskov (LSP)](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/repositories/PostgresCategoriesRepositories.ts)
