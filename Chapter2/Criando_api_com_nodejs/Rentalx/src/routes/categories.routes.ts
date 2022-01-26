@@ -1,8 +1,8 @@
 import { Router } from "express"; // Aqui está sendo importando a função (Router), para poder trabalhar com as rotas no server.ts 
 
-import { CreateCategoryService } from "../services/CreateCategoryService"; // Aqui está sendo importando a classe(CreateCategoryService).
+import { CreateCategoryService } from "../modules/cars/services/CreateCategoryService"; // Aqui está sendo importando a classe(CreateCategoryService).
 
-import { CategoriesRepository } from "../repositories/CategoriesRepository"; // Aqui está sendo importando a classe(CategoriesRepository).
+import { CategoriesRepository } from "../modules/cars/repositories/CategoriesRepository"; // Aqui está sendo importando a classe(CategoriesRepository).
 
 const categoriesRoutes = Router(); //Aqui está sendo chamada a função (Router). 
 const categoriesRepository = new CategoriesRepository(); // Aqui está chamada a classe (CategoriesRepository);
