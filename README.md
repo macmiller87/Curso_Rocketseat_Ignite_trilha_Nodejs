@@ -63,5 +63,11 @@ Este repositório ira mostrar as atividades durante a minha trilha de estudos do
 # Módulo Chapter 2 S.O.L.I.D
 
 - Entendendo o S.O.L.I.D
-- [Utilizando o princípio de responsabilidade única (SRP)](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/services/CreateCategoryService.ts)
-- [Utilizando o princípio da substituição de Liskov (LSP)](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/repositories/PostgresCategoriesRepositories.ts)
+- [Utilizando o princípio de responsabilidade única (SRP)](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/cars/services/CreateCategoryService.ts)
+- Utilizando o princípio da substituição de Liskov (LSP)
+
+# Módulo Chapter 2 Continuação da aplicação
+
+- [Criando service de especificação e separando em módulos](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/cars)
+- Corrigindo as importações
+- [Criando repositório de especificação](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/cars/repositories)
