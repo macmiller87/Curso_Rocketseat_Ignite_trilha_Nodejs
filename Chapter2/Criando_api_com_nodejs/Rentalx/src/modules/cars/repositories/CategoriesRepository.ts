@@ -2,12 +2,24 @@ import { Category } from '../model/category'; // Aqui está sendo importando a f
 import { ICategoriesRepository, ICreateCategoryDTO } from './ICategoriesRepository';
 
 class CategoriesRepository implements ICategoriesRepository {
-
     private categories: Category[]; // Aqui está sendo setado no array (categories) como private , o modelo esperado dos atributos da classe (Category), que esta na (pasta model) => arquivo (category.ts).
 
-    // Esse construtor é tem a responsabilidade de receber os atributos do array (categories)
-    constructor() {
+    // Aqui foi criado (private static INSTANCE: CategoriesRepository), para instanciar a classe.
+    private static INSTANCE: CategoriesRepository;
+
+    // Esse construtor é tem a responsabilidade de receber os atributos do array (categories), foi adicionado o private, por causa do (private static INSTANCE: CategoriesRepository).
+    private constructor() {
         this.categories = [];
+    }
+
+    // Aqui foi criado  o (getInstance()), para insatnciar a classe.
+    public static getInstance(): CategoriesRepository {
+
+        if(!CategoriesRepository.INSTANCE) {
+            CategoriesRepository.INSTANCE = new CategoriesRepository();
+        }
+
+        return CategoriesRepository.INSTANCE;
     }
 
     // Aqui foi criado a função create() que vai criar os objetos do array (category), e também foi desestruturado os parametros (name, description), e está recebendo a interface (ICreateCategoryDTO), e passando seu método (Void), que significa vazio.
