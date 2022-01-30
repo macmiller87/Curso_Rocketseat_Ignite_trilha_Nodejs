@@ -1,4 +1,4 @@
-import { CategoriesRepository } from "../../repositories/CategoriesRepository"; // Aqui está sendo importando a classe(CategoriesRepository).
+import { CategoriesRepository } from "../../repositories/implementations/CategoriesRepository"; // Aqui está sendo importando a classe(CategoriesRepository).
 import { ICategoriesRepository } from "../../repositories/ICategoriesRepository";
 
 // Aqui foi criado a interface e está recebendo e setando os tipos dos atributos.
