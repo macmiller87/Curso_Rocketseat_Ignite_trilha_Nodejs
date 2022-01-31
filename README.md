@@ -80,4 +80,4 @@ Este repositório ira mostrar as atividades durante a minha trilha de estudos do
 
 # Módulo Chapter 2 Trabalhando com Upload
 
-- Conhecendo o Multer
+- [Conhecendo o Multer](https://www.npmjs.com/package/multer)
