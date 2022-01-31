@@ -78,6 +78,6 @@ Este repositório ira mostrar as atividades durante a minha trilha de estudos do
 - [Criando Use Case de especificação](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/cars/useCases)
 - [Refatorando as rotas](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter2/Criando_api_com_nodejs/Rentalx/src)
 
-# Trabalhando com Upload
+# Módulo Chapter 2 Trabalhando com Upload
 
 - Conhecendo o Multer
