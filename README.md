@@ -81,3 +81,5 @@ Este repositório ira mostrar as atividades durante a minha trilha de estudos do
 # Módulo Chapter 2 Trabalhando com Upload
 
 - [Conhecendo o Multer](https://www.npmjs.com/package/multer)
+- [Criando Upload de arquivos](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/routes/categories.routes.ts)
+- [Criando o Use Case para importar categorias](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/cars/useCases/importCategory)
