@@ -88,3 +88,6 @@ Este repositório ira mostrar as atividades durante a minha trilha de estudos do
 - [Inserindo os dados do Upload no repositório](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/cars/useCases/importCategory/ImportCategoryUseCase.ts)
 
 ### Módulo Chapter 2 Iniciando a Documentação
+
+- [Conhecendo o Swagger](https://swagger.io/resources/open-api/)
+- [Configurando o Swagger](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/server.ts)
