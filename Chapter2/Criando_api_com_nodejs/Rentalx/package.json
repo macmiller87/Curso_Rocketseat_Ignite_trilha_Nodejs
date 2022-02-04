@@ -13,11 +13,13 @@
     "csv-parse": "^5.0.4",
     "express": "^4.17.2",
     "multer": "^1.4.4",
+    "swagger-ui-express": "^4.3.0",
     "uuid": "^8.3.2"
   },
   "devDependencies": {
     "@types/express": "^4.17.13",
     "@types/multer": "^1.4.7",
+    "@types/swagger-ui-express": "^4.1.3",
     "@types/uuid": "^8.3.4",
     "@typescript-eslint/eslint-plugin": "^5.10.0",
     "@typescript-eslint/parser": "^5.10.0",
