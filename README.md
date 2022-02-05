@@ -91,3 +91,5 @@ Este repositório ira mostrar as atividades durante a minha trilha de estudos do
 
 - [Conhecendo o Swagger](https://swagger.io/resources/open-api/)
 - [Configurando o Swagger](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/server.ts)
+- [Criando a documentação de Criação de categoria](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/swagger.json)
+- [Criando a documentação de Listagem de categoria](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/swagger.json)
