@@ -11,9 +11,7 @@
     "paths": {
         "/categories": {
             "post": {
-                "tags": [
-                    "Category"
-                ],
+                "tags": ["Category"],
                 "summary": "Create a category",
                 "description": "Create a new category",
                 "requestBody": {
