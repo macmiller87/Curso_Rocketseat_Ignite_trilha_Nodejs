@@ -34,6 +34,7 @@ class ImportCategoryUseCase {
                 }); 
             })
             .on("end", () => { // Aqui está sendo usado a função .on() assim que a Promisse for resolvida e não tiver erro, vai repassar para (categories).
+                fs.promises.unlink(file.path); // Aqui está sendo passado fs.promises.unlink() e o file.path como parametro, que não deixa duplicar o arquivo lido na pasta TMP,
                 resolve(categories);
             })
             .on("error", (err) => { // // Aqui está sendo usado a função .on() assim que a Promisse for resolvida e se tiver erro, a Promisse vai ser rejeitada.
