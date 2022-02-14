@@ -102,3 +102,9 @@ Este repositório ira mostrar as atividades durante a minha trilha de estudos do
 # Desafio: Documentando com Swagger
 
 - [Projeto API de Cadastro e Listagem de usuários Introdução ao SOLID, documentando com Swagger](https://github.com/macmiller87/Curso_Rocketseat_Ignite_Desafio_Introducao_ao_SOLID/blob/main/src/swagger.json)
+
+# Módulo Chapter 3 Conhecendo o Docker
+
+- Introdução
+- [Documentação de instalação do Docker](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter3/Documentacao_de_instalacao_do_docker)
+- O que é o Docker
