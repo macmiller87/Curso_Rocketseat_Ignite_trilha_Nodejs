@@ -108,3 +108,4 @@ Este repositório ira mostrar as atividades durante a minha trilha de estudos do
 - Introdução
 - [Documentação de instalação do Docker](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter3/Documentacao_de_instalacao_do_docker)
 - O que é o Docker
+- [Criando nosso primeiro container e Dockerfile](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/Dockerfile)
