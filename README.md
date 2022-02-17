@@ -110,3 +110,6 @@ Este repositório ira mostrar as atividades durante a minha trilha de estudos do
 - O que é o Docker
 - [Criando nosso primeiro container e Dockerfile](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/Dockerfile)
 - [Usando docker compose](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/docker-compose.yml)
+- [Comandos do docker e docker compose](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter3/Comandos_Docker_eDocker_compose/comandos.md)
+
+## Módulo Chapter 3 Trabalhando com Banco de Dados
