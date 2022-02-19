@@ -116,3 +116,5 @@ Este repositório ira mostrar as atividades durante a minha trilha de estudos do
 
 - Conhecendo as formas de usar o banco de dados
 - [Instalando o TypeORM](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/ormconfig.json)
+- [Criando container do Postgres](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/docker-compose.yml)
+- [Refatoração com Network_mode e Reload](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter3/Refatoracao_com_network_mode_e_reload)
