@@ -1,11 +1,34 @@
-version: "3.7"
+version: "3.9" # Aqui é a versão do docker compose.
 
-services:
-  app:
-    build: .
-    container_name: rentx
+services:  # Definição do serviço.
+  database: # Nome do banco.
+    image: postgres # Nome da imagem do container do docker.
+    container_name: database_ignite # Nome do container em si, esse nome vem como o serviço.
+    restart: always # Aqui indica que o container pode ser reiniciado sempre.
     ports:
-      - 8080:8080
+      - 5432:5432 # Porta padrão do BD POSTGREE, e sequência a mesma porta que o container vai acessar.
+    environment: # Aqui as variaveis de ambiente.
+      - POSTGRES_USER=docker  # Definição do nome do usuário do BD.
+      - POSTGRES_PASSWORD=ignite # Definição da senha do usuário de BD.
+      - POSTGRES_DB=rentx # Definição do nome do contaner do BD no docker.
+    volumes: # Aqui é padrão para indicar o volume do container no docker.
+      - pgdata:/data/postgres # Aqui tem relação com o container app abaixo.
+          
+
+  app: # Nome do container da aplicação.
+    build: . # Definição para construção da imagem no docker,o (.) indica que todas as dependencias s criadas.
+    container_name: rentx # Nome do container em si, esse nome vem como o serviço  e imagem nesse caso.
+    ports:
+      - 8080:8080 # Porta definida da aplicação.
+      - 9229:9229 # Porta definida da aplicação para DEBUG.
     volumes:
-      - .:/usr/app
+      - .:/usr/app # Endereço para o arquivo DOCKERFILE acessar.
+    links:
+      - database  # Nome do banco
+    depends_on:
+      - database  # Nome do banco, que vai se comunicar com a referência passad acima.
+      
         
+volumes: # Aqui é padrão para indicar o volume do container no docker.
+  pgdata: # Aqui tem relação com o (- pgdata:/data/postgres) acima.
+    driver: local # Aqui é a definição do driver do BD.
