@@ -1,4 +1,4 @@
-import { Category } from '../../model/category'; // Aqui está sendo importando a função (Category), para poder trabalhar com as definições da classe (Category) do arquivo (category.ts).
+import { Category } from '../../entities/category'; // Aqui está sendo importando a função (Category), para poder trabalhar com as definições da classe (Category) do arquivo (category.ts).
 import { ICategoriesRepository, ICreateCategoryDTO } from '../ICategoriesRepository';
 
 class CategoriesRepository implements ICategoriesRepository {

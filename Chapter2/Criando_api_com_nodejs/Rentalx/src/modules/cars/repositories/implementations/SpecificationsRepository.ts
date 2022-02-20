@@ -1,4 +1,4 @@
-import { Specification } from "../../model/Specification";
+import { Specification } from "../../entities/Specification";
 import { ISpecificationsRepository, ICreateSpecificationDTO } from "../ISpecificatiosRepository";
 
 // Criação da classe que implementa a interface (ISpecificationsRepository), no arquivo ISpecificatiosRepository.

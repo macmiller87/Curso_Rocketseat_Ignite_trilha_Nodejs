@@ -1,4 +1,4 @@
-import { Category } from "../model/category";
+import { Category } from "../entities/category";
 
 // Aqui foi criado a interface e está recebendo e setando o tipo dos atributos.
 interface ICreateCategoryDTO {

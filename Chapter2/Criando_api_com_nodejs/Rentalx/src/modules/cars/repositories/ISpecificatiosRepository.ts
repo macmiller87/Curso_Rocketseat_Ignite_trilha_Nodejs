@@ -1,4 +1,4 @@
-import { Specification } from "../model/Specification";
+import { Specification } from "../entities/Specification";
 
 // Interface DTO com os parametros.
 interface ICreateSpecificationDTO {
