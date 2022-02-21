@@ -54,7 +54,7 @@ Este repositório ira mostrar as atividades durante a minha trilha de estudos do
 - [ESLint e Prettier](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter2/Criando_api_com_nodejs/Eslint_e_Prettier_no%20Nodejs)
 - Debugando a aplicação
 - [Criando categoria](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/routes/categories.routes.ts)
-- [Inserindo ID com uuid](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/cars/model/category.ts)
+- [Inserindo ID com uuid](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/cars/entities/category.ts)
 - [Inserindo tipagem para categoria](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/cars/repositories/implementations/CategoriesRepository.ts)
 - [Criando repositório de categoria](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/cars/repositories/implementations/CategoriesRepository.ts)
 - [Listando as categorias](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/routes/categories.routes.ts)
@@ -118,3 +118,6 @@ Este repositório ira mostrar as atividades durante a minha trilha de estudos do
 - [Instalando o TypeORM](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/ormconfig.json)
 - [Criando container do Postgres](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/docker-compose.yml)
 - [Refatoração com Network_mode e Reload](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter3/Refatoracao_com_network_mode_e_reload)
+- Aprendendo o conceito de Migrations
+- [Criando Migration de Categoria](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/database/migrations/1645380499059-CreateCategories.ts)
+- [Refatorando o Model de Categoria](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/cars/entities/category.ts)
