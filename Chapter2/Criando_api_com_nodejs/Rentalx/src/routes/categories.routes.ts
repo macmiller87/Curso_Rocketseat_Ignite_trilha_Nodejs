@@ -1,7 +1,9 @@
 import { Router } from "express"; // Aqui está sendo importando a função (Router), para poder trabalhar com as rotas no server.ts 
 import multer from "multer"; // Aqui está sendo importado o Multer.
 
-import { createCategoryController } from "../modules/cars/useCases/createCategory";
+// Pelo mudança feita no aquivo de origem (createCategoryController), aqui no import não é necessário desestruturar no import.
+import  createCategoryController  from "../modules/cars/useCases/createCategory";
+
 import { listCategoriesController } from "../modules/cars/useCases/listCategories";
 import { importCategoryController } from "../modules/cars/useCases/importCategory";
 
@@ -15,7 +17,7 @@ const upload = multer({
 
 // Rota para criar o nome e a categoria do carro.
 categoriesRoutes.post("/", (req, res) => {
-    return createCategoryController.handle(req, res); // Aqui está sendo retornado o (createCategoryController), com a função handle(req, res) com os parametros.
+    return createCategoryController().handle(req, res); // Aqui está sendo retornado o (createCategoryController), com a função handle(req, res) com os parametros.
 });
 
 

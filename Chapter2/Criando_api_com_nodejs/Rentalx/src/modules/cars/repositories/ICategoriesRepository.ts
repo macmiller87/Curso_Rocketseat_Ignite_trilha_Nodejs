@@ -8,9 +8,9 @@ interface ICreateCategoryDTO {
 
 // Aqui foi criado a interface e está recebendo e setando as funções e os atributos.
 interface ICategoriesRepository {
-    findByName(name: string): Category;
-    list(): Category[];
-    create({ name, description }: ICreateCategoryDTO): void;
+    findByName(name: string): Promise<Category>;
+    list(): Promise<Category[]>;
+    create({ name, description }: ICreateCategoryDTO): Promise<void>;
 }
 
 export { ICategoriesRepository, ICreateCategoryDTO};
