@@ -121,3 +121,8 @@ Este repositório ira mostrar as atividades durante a minha trilha de estudos do
 - Aprendendo o conceito de Migrations
 - [Criando Migration de Categoria](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/database/migrations/1645380499059-CreateCategories.ts)
 - [Refatorando o Model de Categoria](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/cars/entities/category.ts)
+- [Alterando o Repositório de Categoria](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/cars/repositories/implementations/CategoriesRepository.ts)
+- [Refatorando o caso de uso de Categoria](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/cars/useCases/createCategory)
+- Entendendo as alterações
+
+### Módulo Chapter 3 Injeção de Dependência
