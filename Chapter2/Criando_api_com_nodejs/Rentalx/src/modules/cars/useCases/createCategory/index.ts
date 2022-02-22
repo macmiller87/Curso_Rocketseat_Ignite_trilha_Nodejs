@@ -2,10 +2,15 @@ import { CategoriesRepository } from "../../repositories/implementations/Categor
 import { CreateCategoryController } from "./CreateCategoryController";
 import { CreateCategoryUseCase } from "./CreateCategoryUseCase";
 
-const categoriesRepository = CategoriesRepository.getInstance();
+// Aqui foi colocado toda as rotas da  criação da categoria dentro da função (export default), para não ficar soltas, e poder ser chamada pelo arquivo (categories.routes), aonde estão as rotas HTTP.
+export default ():  CreateCategoryController => {
 
-const createCategoryUseCase = new CreateCategoryUseCase(categoriesRepository);
+    const categoriesRepository = new CategoriesRepository();
 
-const createCategoryController = new CreateCategoryController(createCategoryUseCase);
+    const createCategoryUseCase = new CreateCategoryUseCase(categoriesRepository);
 
-export { createCategoryController };
+    const createCategoryController = new CreateCategoryController(createCategoryUseCase);
+
+    return createCategoryController;
+
+};
