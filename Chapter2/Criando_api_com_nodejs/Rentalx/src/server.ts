@@ -1,9 +1,12 @@
 import express from "express";
 import swaggerUi  from "swagger-ui-express"; // Aqui está sendo importado o Swagger.
-import { router } from "./routes";
-import swaggerFile from "./swagger.json"; // Para este import precisa colocar no arquivo (tsconfig.json), a opção ("resolveJsonModule": true) desse jeito.
 
 import "./database/index"; // Aqui está sendo importado o arquivo index, que faz a conexão com o BD.
+
+import "./shared/container/index" // Aqui está sendo importado o arquivo index.ts, que está referenciando, toda a classe de criação e suas dependências.
+
+import { router } from "./routes";
+import swaggerFile from "./swagger.json"; // Para este import precisa colocar no arquivo (tsconfig.json), a opção ("resolveJsonModule": true) desse jeito.
 
 const app = express();
 
