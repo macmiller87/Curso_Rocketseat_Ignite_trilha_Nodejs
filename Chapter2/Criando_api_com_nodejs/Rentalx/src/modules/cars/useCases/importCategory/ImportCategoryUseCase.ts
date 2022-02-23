@@ -1,6 +1,7 @@
 import { parse as csvParse } from "csv-parse"; // Aqui está sendo importado o (parse), e foi renomeado para (csv-parse);
 
 import fs from "fs"; // Aqui está sendo instalado a lib (FS), que já é nativa do Nodejs, sem a necessidade de instalar, essa lib é para leitura de arquivos.
+import { inject, injectable } from "tsyringe";
 import { ICategoriesRepository } from "../../repositories/ICategoriesRepository";
 
 // Aqui foi criado a interface para passar os parametros que a classe (ImportCategoryUseCase) vai ter.
@@ -9,9 +10,10 @@ interface IImportCategory {
     description: string;
 }
 
+@injectable()
 class ImportCategoryUseCase {
 
-    constructor(private categoriesRepository: ICategoriesRepository) {}
+    constructor(@inject("CategoriesRepository") private categoriesRepository: ICategoriesRepository) {}
 
     loadCategories(file: Express.Multer.File): Promise<IImportCategory[]> {
 
@@ -52,10 +54,10 @@ class ImportCategoryUseCase {
             categories.map(async (category) => {
                 const { name, description } = category;
 
-                const existCategory = this.categoriesRepository.findByName(name);
+                const existCategory = await this.categoriesRepository.findByName(name);
 
                 if(!existCategory) {
-                    this.categoriesRepository.create({
+                    await this.categoriesRepository.create({
                         name,
                         description,
                     });
