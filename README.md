@@ -127,5 +127,5 @@ Este repositório ira mostrar as atividades durante a minha trilha de estudos do
 
 ### Módulo Chapter 3 Injeção de Dependência
 
-- [Conhecendo o TSyringe](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/package.json)
+- [Conhecendo o TSyringe](https://www.npmjs.com/package/tsyringe?activeTab=readme)
 - [Refatorando as especificações](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/cars/useCases/createSpecification)
