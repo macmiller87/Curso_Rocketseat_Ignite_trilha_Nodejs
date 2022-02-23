@@ -1,11 +1,10 @@
 import { Router } from "express"; // Aqui está sendo importando a função (Router), para poder trabalhar com as rotas no server.ts 
 import multer from "multer"; // Aqui está sendo importado o Multer.
 
-// Pelo mudança feita no aquivo de origem (createCategoryController), aqui no import não é necessário desestruturar no import.
-import  createCategoryController  from "../modules/cars/useCases/createCategory";
 
-import { listCategoriesController } from "../modules/cars/useCases/listCategories";
-import { importCategoryController } from "../modules/cars/useCases/importCategory";
+import { CreateCategoryController } from "../modules/cars/useCases/createCategory/CreateCategoryController";
+import { ListCategoriesController } from "../modules/cars/useCases/listCategories/ListCategoriesController";
+import { ImportCategoryController } from "../modules/cars/useCases/importCategory/ImportCategoryController";
 
 
 const categoriesRoutes = Router(); //Aqui está sendo chamada a função (Router). 
@@ -15,22 +14,21 @@ const upload = multer({
     dest: "./tmp",
 });
 
-// Rota para criar o nome e a categoria do carro.
-categoriesRoutes.post("/", (req, res) => {
-    return createCategoryController().handle(req, res); // Aqui está sendo retornado o (createCategoryController), com a função handle(req, res) com os parametros.
-});
+// Aqui foi criado essa const, para referenciar a classe (CreateCategoryController) e suas dependências, para poder ser usada nas rotas, como se fosse uma função middleware.
+const createCategoryController = new CreateCategoryController();
 
+const importCategoryController = new ImportCategoryController();
 
-// Rota para listar as informações do carro.
-categoriesRoutes.get("/", (req, res) => {
-    return listCategoriesController.handle(req, res);
+const listCategoriesController = new ListCategoriesController();
 
-});
+// Rota para criar o nome e a categoria do carro, passando a classe (CreateCategoryController) e suas dependências, com a função handle.
+categoriesRoutes.post("/", createCategoryController.handle);
 
-// Rota para a criação do arquivo de import da aplicação na pasta (tmp), esse paramatro (upload.single("file")), especifica o nome do arquivo e quantidade de arquivos que vão ser importados pelo insomnia.
-categoriesRoutes.post("/import", upload.single("file"),  (req, res) => {
-    return importCategoryController.handle(req, res);
-});
+// Rota para listar as informações do carro, passando a classe (listCategoriesController) e suas dependências, com a função handle.
+categoriesRoutes.get("/", listCategoriesController.handle);
+
+// Rota para a criação do arquivo de import da aplicação na pasta (tmp), esse paramatro (upload.single("file")), especifica o nome do arquivo e quantidade de arquivos que vão ser importados pelo insomnia, e passando a classe (importCategoryController) e suas dependências, com a função handle.
+categoriesRoutes.post("/import", upload.single("file"), importCategoryController.handle);
 
 export { categoriesRoutes }; // Aqui está exportando o método acima.
 
