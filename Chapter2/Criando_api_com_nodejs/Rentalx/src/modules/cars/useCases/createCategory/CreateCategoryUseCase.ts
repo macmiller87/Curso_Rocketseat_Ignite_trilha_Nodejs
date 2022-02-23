@@ -1,3 +1,4 @@
+import { inject, injectable } from "tsyringe"; // Aqui está sendo importada a função (inject e injectable) da lib (tsyringe).
 import { ICategoriesRepository } from "../../repositories/ICategoriesRepository";
 
 // Aqui foi criado a interface e está recebendo e setando os tipos dos atributos.
@@ -6,9 +7,10 @@ interface IRequest {
     description: string;
 }
 
-
+// Aqui está sendo usado a função (injectable), que permite que a classe (CreateCategoryUseCase), possa receber a injeção de dependência, nesse caso está sendo injetado a classe (CategoriesRepository).
+@injectable()
 class  CreateCategoryUseCase {
-    constructor(private categoriesRepository: ICategoriesRepository) {} // Aqui foi criado o (constructor) e passado como (private), chamando (CategoriesRepository)
+    constructor(@inject("CategoriesRepository") private categoriesRepository: ICategoriesRepository) {} // Aqui está sendo usado a função (@inject), que tem a função de injetar a dependência, ou seja a (ICategoriesRepository), pela lib (tsyringe), também foi criado o (constructor) e passado como (private), chamando (CategoriesRepository)
 
     // Aqui foi criado a função execute passando os parametros e setando a interface (IRequest), e dizendo que essa função e (void).
     async execute({ name, description }: IRequest): Promise<void> {
