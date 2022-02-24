@@ -13,7 +13,7 @@ class ImportCategoryController {
         const importCategoryUseCase = container.resolve(ImportCategoryUseCase);
 
         await importCategoryUseCase.execute(file); // Aqui foi setado como (this), por causa do construtor está privado, e chamado o paramatro (importCategoryUseCase), criando a função (execute(file)), para execuatr o arquivo file.
-        return res.send();
+        return res.status(201).send();
     }
 }
 
