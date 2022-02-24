@@ -1,31 +1,29 @@
+import { getRepository, Repository } from "typeorm";
 import { Specification } from "../../entities/Specification";
 import { ISpecificationsRepository, ICreateSpecificationDTO } from "../ISpecificatiosRepository";
 
 // Criação da classe que implementa a interface (ISpecificationsRepository), no arquivo ISpecificatiosRepository.
 class SpecificationsRepository implements ISpecificationsRepository {
 
-    private specifications: Specification[]; // Crisção do array, como método privado.
+    private repository: Repository<Specification>;
 
     constructor() { // Criação do constructor, setando o array com o this ..
-        this.specifications = [];
+        this.repository = getRepository(Specification);
     }
 
     // Método create passando os parametros e a interface (ICreateSpecificationDTO).
-    create({ name, description }: ICreateSpecificationDTO): void {
-        const specification = new Specification();
-
-        Object.assign(specification, {
-            name,
+    async create({ name, description }: ICreateSpecificationDTO): Promise<void> {
+        const specification = this.repository.create({
             description,
-            created_at: new Date()
+            name
         });
 
-        this.specifications.push(specification);
+        await this.repository.save(specification);
     }
 
     // Aqui foi criado a função (findByName) com a lógica para encontrar o name se ele se repetir.
-    findByName(name: string) {
-        const specification = this.specifications.find((specification) => specification.name === name);
+    async findByName(name: string): Promise<Specification> {
+        const specification = this.repository.findOne({ name });
         return specification;
     }
 
