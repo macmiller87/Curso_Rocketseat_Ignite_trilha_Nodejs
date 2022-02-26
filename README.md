@@ -134,7 +134,7 @@ Este repositório ira mostrar as atividades durante a minha trilha de estudos do
 
 ### Módulo chapter 3 Usuário
 
-- [Criando Migration de Usuário](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/database/migrations/1645736403921-CreateUsers.ts)
+- [Criando Migration de Usuário](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/database/migrations/1645915448027-CreateUsers.ts)
 - [Criando Repositório de Usuário](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/accounts)
 - [Criando o Controller de Usuário](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/accounts/useCases/createUser/CreateUserController.ts)
 - [Alterando tabela de Usuário](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/database/migrations/1645916316421-AlterUserDeleteUsername.ts)
