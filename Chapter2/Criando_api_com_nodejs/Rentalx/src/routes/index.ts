@@ -1,6 +1,7 @@
 import { Router } from "express";
 import { categoriesRoutes } from "./categories.routes";
 import { specificationsRoutes } from "./specification.routes";
+import { usersRoutes } from "./users.routes";
 
 const router = Router();
 
@@ -9,6 +10,8 @@ router.use("/categories", categoriesRoutes); // Aqui está sendo setado o catego
 
 // Rota de criação da specificação da categoria do carro.
 router.use("/specifications", specificationsRoutes); // Aqui está sendo setado o specificationRoutes, e foi adicionado um patch => ("/specifications"), para ficar como padrão dessa rota.
+
+router.use("/users", usersRoutes);
 
 
 export { router };
