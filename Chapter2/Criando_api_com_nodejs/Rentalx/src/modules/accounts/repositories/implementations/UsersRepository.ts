@@ -21,6 +21,12 @@ class UsersRepository implements IUsersRepository {
 
         await this.repository.save(user);
     }
+    
+    // Aqui foi criado essa implementação para fazer a verificação do (email) do usuário.
+    async findByEmail(email: string): Promise<User> {
+        const user =  await this.repository.findOne({ email });
+        return user;
+    }
 
 }
 
