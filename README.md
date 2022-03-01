@@ -140,3 +140,4 @@ Este repositório ira mostrar as atividades durante a minha trilha de estudos do
 - [Alterando tabela de Usuário](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/database/migrations/1645916316421-AlterUserDeleteUsername.ts)
 - [Criptografar senha](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/accounts/useCases/createUser/CreateUserUseCase.ts)
 - [Entendendo autenticação com JWT](https://jwt.io/)
+- [Criando Token do Usuário](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/accounts/useCases/authenticateUser)
