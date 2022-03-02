@@ -18,6 +18,7 @@ services:                           # Definição do serviço.
   app:                              # Nome do container da aplicação.
     build: . # Definição para construção da imagem no docker,o (.) indica que todas as dependencias s criadas.
     container_name: rentx       # Nome do container em si, esse nome vem como o serviço  e imagem nesse caso.
+    restart: always
     ports:
       - 8080:8080                    # Porta definida da aplicação.
       - 9229:9229                    # Porta definida da aplicação para DEBUG.
