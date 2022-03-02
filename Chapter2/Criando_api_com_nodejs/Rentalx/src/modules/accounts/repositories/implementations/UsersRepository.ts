@@ -28,6 +28,12 @@ class UsersRepository implements IUsersRepository {
         return user;
     }
 
+    // Aqui foi criado essa implementação para fazer a verificação do (id) do usuário.
+    async findById(id: string): Promise<User> {
+        const user =  await this.repository.findOne(id);
+        return user;
+    }
+
 }
 
 export { UsersRepository };
