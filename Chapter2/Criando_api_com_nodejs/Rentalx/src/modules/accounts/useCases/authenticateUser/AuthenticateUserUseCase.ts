@@ -1,6 +1,7 @@
 import { compare } from "bcryptjs";
 import { sign } from "jsonwebtoken";
 import { inject, injectable } from "tsyringe";
+import { AppError } from "../../../../errors/AppError";
 import { IUsersRepository } from "../../repositories/IUsersRepository";
 
 interface IRequest {
@@ -27,14 +28,14 @@ class AuthenticateUserUseCase {
         const user = await this.userRepository.findByEmail(email);
 
         if(!user) {
-            throw new Error("Email or password incorrect!");         
+            throw new AppError("Email or password incorrect!");         
         }
 
         // Aqui está sendo usado a função (compare) da lib (bcryptjs), para fazer a comparação entre a senha criada pelo usuário
         const passwordMatch = await compare(password, user.password);
 
         if(!passwordMatch) {
-            throw new Error("Email or password incorrect!");
+            throw new AppError("Email or password incorrect!");
         }
 
         // Aqui esta sendo usado a função (sign()) da lib (jsonwebtoken), para fazer a autenticação do usuário.

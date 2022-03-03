@@ -1,4 +1,5 @@
 import { inject, injectable } from "tsyringe"; // Aqui está sendo importada a função (inject e injectable) da lib (tsyringe).
+import { AppError } from "../../../../errors/AppError";
 import { ICategoriesRepository } from "../../repositories/ICategoriesRepository";
 
 // Aqui foi criado a interface e está recebendo e setando os tipos dos atributos.
@@ -17,7 +18,7 @@ class  CreateCategoryUseCase {
         const categoryAlredyExists = await this.categoriesRepository.findByName(name); // Aqui está sendo setado a classe (categoriesRepository), com a função (findByName(name)), que está tratando a validação no arquivo categoriesRepository.ts
 
         if(categoryAlredyExists) {
-            throw new Error("Category Alredy exists !");
+            throw new AppError("Category Alredy exists !");
         }
 
         this.categoriesRepository.create({ name, description }); // Aqui está sendo setado a classe (CategoriesRepository) e passando a função create({name, description}) com seus atributos name e description.
