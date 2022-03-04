@@ -36,6 +36,12 @@ export async function ensureAuthenticated(req: Request, res: Response, next: Nex
           throw new AppError("User does not exists!", 401);
       }
 
+      
+      // Aqui foi passado essa requisição para poder atender a classe (updateUserAvatarController), o arquivo de mesmo nome, (obs: necessitou sobreescrever a tipagem do express no arquivo index.d.ts na pasta @types)
+      req.user = {
+        id: user_id
+      }
+
       next();
 
     } catch{
