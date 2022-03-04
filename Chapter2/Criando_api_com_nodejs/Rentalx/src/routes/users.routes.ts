@@ -10,7 +10,7 @@ const updateUserAvatarController = new UpdateUserAvatarController();
 // Rota de criação do usuário
 usersRoutes.post("/", createUserController.handle);
 
-// Rota de criação e atualização do avatart do usuário
+// Rota de criação e atualização do avatar do usuário
 usersRoutes.patch("/avatar", updateUserAvatarController.handle);
 
 export { usersRoutes };
