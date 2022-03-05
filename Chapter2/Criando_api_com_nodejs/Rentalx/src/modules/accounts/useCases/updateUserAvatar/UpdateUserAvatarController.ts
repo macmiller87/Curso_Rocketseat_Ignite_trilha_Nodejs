@@ -4,11 +4,11 @@ import { UpdateUserAvatarUseCase } from "./UpdateUserAvatarUseCase";
 
 class UpdateUserAvatarController {
 
-    async handle(req: Request, res: Response) {
+    async handle(req: Request, res: Response): Promise<Response> {
         const { id } = req.user; // Aqui está o caso de uso que teve que sobescrever a tipagem do express.
 
-        // Aqui estaá setado nulo pq, o usuário pode ou não passar na requisição.
-        const avatar_File = null;
+        // Aqui está sendo passdo a requisição do arquivo avatar.
+        const avatar_File = req.file.filename;
 
         const updateUserAvatarUseCase = container.resolve(UpdateUserAvatarUseCase);
 
