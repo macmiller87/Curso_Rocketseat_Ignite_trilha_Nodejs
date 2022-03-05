@@ -147,3 +147,4 @@ Este repositório ira mostrar as atividades durante a minha trilha de estudos do
 ### Módulo chapter 3 Avatar do Usuário
 
 - [Adicionando Coluna de Avatar](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/database/migrations/1646340441910-AlterUserAddAvatar.ts)
+- [Upload de avatar](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/config/upload.ts)
