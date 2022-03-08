@@ -34,11 +34,11 @@ Este repositório ira mostrar as atividades durante a minha trilha de estudos do
 
 # Desafio: Conceitos do Node.js
 
-- [Projeto API TODO Conceitos do Nodejs](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter1/Conceitos_do_nodejs)
+- [Projeto API TODO ( Conceitos do Nodejs )](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter1/Conceitos_do_nodejs)
 
 # Desafio: Trabalhando com Middlewares
 
-- [Projeto API TODO versão 2 Trabalhando com Middlewares](https://github.com/macmiller87/Curso_Rockteseat_Ignite_Desafio_Trabalhando_com_Middlewares)
+- [Projeto API TODO versão 2 ( Trabalhando com Middlewares )](https://github.com/macmiller87/Curso_Rockteseat_Ignite_Desafio_Trabalhando_com_Middlewares)
 
 # Módulo Chapter 2 Typescript
 
@@ -97,11 +97,11 @@ Este repositório ira mostrar as atividades durante a minha trilha de estudos do
 
 # Desafio: Introdução ao SOLID
 
-- [Projeto API de Cadastro e Listagem de usuários Introdução ao SOLID](https://github.com/macmiller87/Curso_Rocketseat_Ignite_Desafio_Introducao_ao_SOLID)
+- [Projeto API de Cadastro e Listagem de usuários ( Introdução ao SOLID )](https://github.com/macmiller87/Curso_Rocketseat_Ignite_Desafio_Introducao_ao_SOLID)
 
 # Desafio: Documentando com Swagger
 
-- [Projeto API de Cadastro e Listagem de usuários Introdução ao SOLID, documentando com Swagger](https://github.com/macmiller87/Curso_Rocketseat_Ignite_Desafio_Introducao_ao_SOLID/blob/main/src/swagger.json)
+- [Projeto API de Cadastro e Listagem de usuários Introdução ao SOLID ( documentando com Swagger )](https://github.com/macmiller87/Curso_Rocketseat_Ignite_Desafio_Introducao_ao_SOLID/blob/main/src/swagger.json)
 
 # Módulo Chapter 3 Conhecendo o Docker
 
@@ -149,3 +149,7 @@ Este repositório ira mostrar as atividades durante a minha trilha de estudos do
 - [Adicionando Coluna de Avatar](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/database/migrations/1646340441910-AlterUserAddAvatar.ts)
 - [Upload de avatar](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/config/upload.ts)
 - [Remover Arquivo de Avatar Existente](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/utils/file.ts)
+
+# Desafio: Database Queries
+
+- [Projeto API de Cadastro e listagem de Usuários e Games ( Database Queries )](https://github.com/macmiller87/Curso_Rocketseat_Ignite_Desafio_Database_Queries)
