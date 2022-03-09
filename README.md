@@ -153,3 +153,7 @@ Este repositório ira mostrar as atividades durante a minha trilha de estudos do
 # Desafio: Database Queries
 
 - [Projeto API de Cadastro e listagem de Usuários e Games ( Database Queries )](https://github.com/macmiller87/Curso_Rocketseat_Ignite_Desafio_Database_Queries)
+
+# Desafio: Modelagem do Banco de Dados
+
+- [Projeto API de Cadastro e listagem de Usuários e Games ( Modelagem do Banco de Dados )](https://automatic-iberis-75f.notion.site/Desafio-02-Ignite-Modelagem-do-banco-de-dados-286d9fa597574984951e7c577614eeaf)
