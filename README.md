@@ -161,3 +161,4 @@ Este repositório ira mostrar as atividades durante a minha trilha de estudos do
 # Módulo Chapter 4 Testes
 
 - Conhecendo os tipos de testes 
+- Criando o primeiro teste
