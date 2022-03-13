@@ -22,7 +22,7 @@ interface IResponse {
 class AuthenticateUserUseCase {  
     constructor(@inject("UsersRepository") private userRepository: IUsersRepository) {}
 
-    async exexute({ email, password }: IRequest): Promise<IResponse> {
+    async execute({ email, password }: IRequest): Promise<IResponse> {
 
         
         const user = await this.userRepository.findByEmail(email);
