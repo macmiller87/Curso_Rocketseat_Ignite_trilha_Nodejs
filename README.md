@@ -164,3 +164,5 @@ Este repositório ira mostrar as atividades durante a minha trilha de estudos do
 - Criando o primeiro teste
 - [Teste de Criação de Categoria](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/cars/useCases/createCategory/CreateCategoryUseCase.spec.ts)
 - [Teste de Autenticação do Usuário](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/accounts/useCases/authenticateUser/AuthenticateUserUseCase.spec.ts)
+- Imports da Aplicação
+- Corrigindo as importações
