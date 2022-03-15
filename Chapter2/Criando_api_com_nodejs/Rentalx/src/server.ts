@@ -5,9 +5,9 @@ import swaggerUi  from "swagger-ui-express"; // Aqui está sendo importado o Swa
 
 import "./database/index"; // Aqui está sendo importado o arquivo index, que faz a conexão com o BD.
 
-import "./shared/container/index" // Aqui está sendo importado o arquivo index.ts, que está referenciando, toda a classe de criação e suas dependências.
+import "@shared/container/index" // Aqui está sendo importado o arquivo index.ts, que está referenciando, toda a classe de criação e suas dependências.
 
-import { AppError } from "./errors/AppError";
+import { AppError } from "@errors/AppError";
 import { router } from "./routes";
 import swaggerFile from "./swagger.json"; // Para este import precisa colocar no arquivo (tsconfig.json), a opção ("resolveJsonModule": true) desse jeito.
 

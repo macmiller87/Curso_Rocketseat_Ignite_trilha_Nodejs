@@ -2,7 +2,7 @@ import { parse as csvParse } from "csv-parse"; // Aqui está sendo importado o (
 
 import fs from "fs"; // Aqui está sendo instalado a lib (FS), que já é nativa do Nodejs, sem a necessidade de instalar, essa lib é para leitura de arquivos.
 import { inject, injectable } from "tsyringe";
-import { ICategoriesRepository } from "../../repositories/ICategoriesRepository";
+import { ICategoriesRepository } from "@modules/cars/repositories/ICategoriesRepository";
 
 // Aqui foi criado a interface para passar os parametros que a classe (ImportCategoryUseCase) vai ter.
 interface IImportCategory {
