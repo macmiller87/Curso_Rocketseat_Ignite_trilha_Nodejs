@@ -1,5 +1,5 @@
 import { inject, injectable } from "tsyringe"; // Aqui está sendo importada a função (inject e injectable) da lib (tsyringe).
-import { AppError } from "@errors/AppError";
+import { AppError } from "@shared/errors/AppError";
 import { ICategoriesRepository } from "@modules/cars/repositories/ICategoriesRepository";
 
 // Aqui foi criado a interface e está recebendo e setando os tipos dos atributos.
