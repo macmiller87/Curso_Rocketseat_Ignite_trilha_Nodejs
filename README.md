@@ -48,17 +48,18 @@ Este repositório ira mostrar as atividades durante a minha trilha de estudos do
 - [Adicionando os tipos](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter2/Criando_projeto_com_typescript)
 - [Definindo os parâmetros obrigatórios](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter2/Criando_projeto_com_typescript)
 
-### Módulo Chapter 2 Criando API com NodeJS
+### Módulo Chapter 2 Criando API com NodeJS 
+#### (Apartir daqui todos os tópicos a seguir fazem parte da API RENTALX que se encontra na pasta (chapter2/criando_api_com_nodejs/rentalx))
 
 - [Configurando ts-node-dev](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/package.json)
 - [ESLint e Prettier](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter2/Criando_api_com_nodejs/Eslint_e_Prettier_no%20Nodejs)
 - Debugando a aplicação
-- [Criando categoria](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/routes/categories.routes.ts)
-- [Inserindo ID com uuid](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/cars/entities/category.ts)
-- [Inserindo tipagem para categoria](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/cars/repositories/implementations/CategoriesRepository.ts)
-- [Criando repositório de categoria](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/cars/repositories/implementations/CategoriesRepository.ts)
-- [Listando as categorias](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/routes/categories.routes.ts)
-- [Validando o cadastro de categoria](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/routes/categories.routes.ts)
+- [Criando categoria](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/cars/infra/typeorm/repositories/CategoriesRepository.ts)
+- [Inserindo ID com uuid](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/cars/infra/typeorm/entities/category.ts)
+- [Inserindo tipagem para categoria](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/cars/repositories/ICategoriesRepository.ts)
+- [Criando repositório de categoria](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/cars/useCases/createCategory)
+- [Listando as categorias](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/cars/useCases/listCategories)
+- [Validando o cadastro de categoria](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/cars/useCases/createCategory/CreateCategoryUseCase.ts)
 
 ### Módulo Chapter 2 S.O.L.I.D
 
@@ -68,20 +69,20 @@ Este repositório ira mostrar as atividades durante a minha trilha de estudos do
 
 ### Módulo Chapter 2 Continuação da aplicação
 
-- [Criando service de especificação e separando em módulos](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/cars)
+- [Criando service de especificação e separando em módulos](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules)
 - Corrigindo as importações
-- [Criando repositório de especificação](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/cars/repositories)
+- [Criando repositório de especificação](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/cars/repositories/ISpecificatiosRepository.ts)
 - [Criando os Use Case de categoria](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/cars/useCases/createCategory)
 - [Refatorando a listagem de categoria](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/cars/useCases/listCategories)
-- [Conhecendo Singleton Pattern](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/cars/repositories/implementations/CategoriesRepository.ts)
-- [Separando os repositórios](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/cars/repositories/implementations)
-- [Criando Use Case de especificação](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/cars/useCases)
-- [Refatorando as rotas](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter2/Criando_api_com_nodejs/Rentalx/src)
+- [Conhecendo Singleton Pattern](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/cars/infra/typeorm/repositories/CategoriesRepository.ts)
+- [Separando os repositórios](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/cars/repositories)
+- [Criando Use Case de especificação](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/cars/useCases/createSpecification)
+- [Refatorando as rotas](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/shared/infra/http/routes)
 
 ### Módulo Chapter 2 Trabalhando com Upload
 
 - [Conhecendo o Multer](https://www.npmjs.com/package/multer)
-- [Criando Upload de arquivos](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/routes/categories.routes.ts)
+- [Criando Upload de arquivos](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/shared/infra/http/routes/categories.routes.ts)
 - [Criando o Use Case para importar categorias](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/cars/useCases/importCategory)
 - [Conhecendo o conceito de Stream](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/cars/useCases/importCategory/ImportCategoryUseCase.ts)
 - [Lendo os dados do Upload](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/cars/useCases/importCategory/ImportCategoryUseCase.ts)
@@ -90,7 +91,7 @@ Este repositório ira mostrar as atividades durante a minha trilha de estudos do
 ### Módulo Chapter 2 Iniciando a Documentação
 
 - [Conhecendo o Swagger](https://swagger.io/resources/open-api/)
-- [Configurando o Swagger](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/server.ts)
+- [Configurando o Swagger](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/shared/infra/http/server.ts)
 - [Criando a documentação de Criação de categoria](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/swagger.json)
 - [Criando a documentação de Listagem de categoria](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/swagger.json)
 - [Removendo os arquivos de Upload](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/cars/useCases/importCategory/ImportCategoryUseCase.ts)
@@ -119,9 +120,9 @@ Este repositório ira mostrar as atividades durante a minha trilha de estudos do
 - [Criando container do Postgres](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/docker-compose.yml)
 - [Refatoração com Network_mode e Reload](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter3/Refatoracao_com_network_mode_e_reload)
 - Aprendendo o conceito de Migrations
-- [Criando Migration de Categoria](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/database/migrations/1645380499059-CreateCategories.ts)
-- [Refatorando o Model de Categoria](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/cars/entities/category.ts)
-- [Alterando o Repositório de Categoria](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/cars/repositories/implementations/CategoriesRepository.ts)
+- [Criando Migration de Categoria](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/shared/infra/typeorm/migrations/1645380499059-CreateCategories.ts)
+- [Refatorando o Model de Categoria](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/cars/infra/typeorm/entities/category.ts)
+- [Alterando o Repositório de Categoria](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/cars/infra/typeorm/repositories/CategoriesRepository.ts)
 - [Refatorando o caso de uso de Categoria](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/cars/useCases/createCategory)
 - Entendendo as alterações
 
@@ -129,24 +130,24 @@ Este repositório ira mostrar as atividades durante a minha trilha de estudos do
 
 - [Conhecendo o TSyringe](https://www.npmjs.com/package/tsyringe?activeTab=readme)
 - [Refatorando as especificações](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/cars/useCases/createSpecification)
-- [Criando Migration de Especificação](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/database/migrations/1645646623482-CreateSpecifications.ts)
+- [Criando Migration de Especificação](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/shared/infra/typeorm/migrations/1645646623482-CreateSpecifications.ts)
 - [Continuação da Documentação](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/swagger.json)
 
 ### Módulo chapter 3 Usuário
 
-- [Criando Migration de Usuário](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/database/migrations/1645915448027-CreateUsers.ts)
-- [Criando Repositório de Usuário](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/accounts)
+- [Criando Migration de Usuário](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/shared/infra/typeorm/migrations/1645915448027-CreateUsers.ts)
+- [Criando Repositório de Usuário](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/accounts/infra/typeorm/repositories/UsersRepository.ts)
 - [Criando o Controller de Usuário](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/accounts/useCases/createUser/CreateUserController.ts)
-- [Alterando tabela de Usuário](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/database/migrations/1645916316421-AlterUserDeleteUsername.ts)
+- [Alterando tabela de Usuário](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/shared/infra/typeorm/migrations/1645916316421-AlterUserDeleteUsername.ts)
 - [Criptografar senha](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/accounts/useCases/createUser/CreateUserUseCase.ts)
 - [Entendendo autenticação com JWT](https://jwt.io/)
-- [Criando Token do Usuário](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/accounts/useCases/authenticateUser)
-- [Autenticação nas rotas](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/middlewares/ensureAuthenticated.ts)
-- [Tratamento de Exceções](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/errors/AppError.ts)
+- [Criando Token do Usuário](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/accounts/useCases/authenticateUser/AuthenticateUserUseCase.ts)
+- [Autenticação nas rotas](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/shared/infra/http/middlewares/ensureAuthenticated.ts)
+- [Tratamento de Exceções](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/shared/errors/AppError.ts)
 
 ### Módulo chapter 3 Avatar do Usuário
 
-- [Adicionando Coluna de Avatar](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/database/migrations/1646340441910-AlterUserAddAvatar.ts)
+- [Adicionando Coluna de Avatar](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/shared/infra/typeorm/migrations/1646340441910-AlterUserAddAvatar.ts)
 - [Upload de avatar](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/config/upload.ts)
 - [Remover Arquivo de Avatar Existente](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/utils/file.ts)
 
@@ -165,4 +166,7 @@ Este repositório ira mostrar as atividades durante a minha trilha de estudos do
 - [Teste de Criação de Categoria](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/cars/useCases/createCategory/CreateCategoryUseCase.spec.ts)
 - [Teste de Autenticação do Usuário](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/accounts/useCases/authenticateUser/AuthenticateUserUseCase.spec.ts)
 - Imports da Aplicação
-- Corrigindo as importações
+- Corrigindo as Importações
+- Refatorando a Aplicação
+
+### Módulo Chapter 4 Requisitos
