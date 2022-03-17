@@ -168,5 +168,9 @@ Este repositório ira mostrar as atividades durante a minha trilha de estudos do
 - Imports da Aplicação
 - Corrigindo as Importações
 - Refatorando a Aplicação
-
 ### Módulo Chapter 4 Requisitos
+
+- [Escrevendo os requisitos da aplicação](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter2/Criando_api_com_nodejs/Rentalx)
+### Módulo Chapter 4 Carros
+
+- Alterando a Importação dos Repositórios
