@@ -3,7 +3,7 @@
 Esse projeto é uma API de cadastro de carros, usuários e controle e aluguel de carros.
 ###### Está em desenvolvimento ............. 🔥🔥🚀🚀
 
-## Requisitos Funcionais**
+## Requisitos Funcionais
 ### Cadastro de Carro
 - [] Deve ser possível cadastrar um novo carro.
 - [] Deve ser possível listar todas as categorias.
@@ -21,10 +21,10 @@ Esse projeto é uma API de cadastro de carros, usuários e controle e aluguel de
 - [] Deve ser possível listar todos os carros.
 ### Aluguel de Carro
 - [] Deve ser possível cadastrar um aluguel.
-## Requisitos não Funcionais**
+## Requisitos não Funcionais
 ### Cadastro de Imagens do Carro
-v[] Utilizar o multer para upload dos arquivos.
-## Regra de Negócio**
+- [] Utilizar o multer para upload dos arquivos.
+## Regra de Negócio
 ### Cadastro de Carro
 - [] Não deve ser possível cadastrar um carro com uma placa já existente.
 - [] Não deve ser possível alterar uma placa de um carro já cadastrado.
