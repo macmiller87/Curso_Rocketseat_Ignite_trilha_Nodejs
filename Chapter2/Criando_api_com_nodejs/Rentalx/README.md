@@ -6,7 +6,6 @@ Esse projeto é uma API de cadastro de carros, usuários e controle e aluguel de
 ## :white_check_mark: Requisitos Funcionais
 ### Cadastro de Carro
 - [] Deve ser possível cadastrar um novo carro.
-- [] Deve ser possível listar todas as categorias.
 ### Listagem de Carros
 - [] Deve ser possível listar os carros disponíveis.
 - [] Deve ser possível listar todos os carros desponíveis pelo nome da categoria.
