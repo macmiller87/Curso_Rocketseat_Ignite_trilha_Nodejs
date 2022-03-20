@@ -6,10 +6,11 @@ class CarsRepositoryInMemory implements ICarsRepository {
 
     cars: Car[] = [];
 
-    async create({ name, description, daily_rate, license_plate, fine_amount, brand, category_id }: ICreateCarDTO): Promise<void> {
-        const cars = new Car();
+    // Cria o carro.
+    async create({ name, description, daily_rate, license_plate, fine_amount, brand, category_id }: ICreateCarDTO): Promise<Car> {
+        const car = new Car();
 
-        Object.assign(cars, {
+        Object.assign(car, {
             name,
             description,
             daily_rate,
@@ -19,7 +20,16 @@ class CarsRepositoryInMemory implements ICarsRepository {
             category_id            
         });
 
-        this.cars.push(cars);
+        this.cars.push(car);
+
+        return car;
+    }
+
+    // Verifica se o carro existe.
+    async findByLicensePlate(license_plate: string): Promise<Car> {
+        
+        const car = this.cars.find((car) => car.license_plate === license_plate);
+        return car;
     }
 
 }
