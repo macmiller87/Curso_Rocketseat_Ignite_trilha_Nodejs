@@ -1,8 +1,9 @@
 import { Router } from "express";
-import { authenticateRoutes } from "./authenticate.routes";
 import { categoriesRoutes } from "./categories.routes";
 import { specificationsRoutes } from "./specification.routes";
 import { usersRoutes } from "./users.routes";
+import { authenticateRoutes } from "./authenticate.routes";
+import { carsRoutes } from "./cars.routes";
 
 const router = Router();
 
@@ -12,11 +13,14 @@ router.use("/categories", categoriesRoutes); // Aqui está sendo setado o catego
 // Rota de criação da specificação da categoria do carro.
 router.use("/specifications", specificationsRoutes); // Aqui está sendo setado o specificationRoutes, e foi adicionado um patch => ("/specifications"), para ficar como padrão dessa rota.
 
-// Rota para a criação do usuário
+// Rota para a criação do usuário.
 router.use("/users", usersRoutes);
 
 // Rota para a autenticação do usuário, (obs: foi passado diretamente a rota dentro do use para não precisar colocar nenhum path na requisição da rota no insomnia)
 router.use(authenticateRoutes);
+
+// Rota de criação do carro.
+router.use("/cars", carsRoutes);
 
 
 export { router };
