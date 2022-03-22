@@ -177,3 +177,4 @@ Este repositório ira mostrar as atividades durante a minha trilha de estudos do
 - [Criando Migrations do Carro](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/shared/infra/typeorm/migrations/1647554226334-CreateCars.ts)
 - TDD na Prática
 - [Continuando o Caso de Uso de Carros](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/cars/useCases/createCar/CreateCarUseCase.ts)
+- [Estruturando a Entidade de Carros](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/cars/infra/typeorm/entities/Car.ts)
