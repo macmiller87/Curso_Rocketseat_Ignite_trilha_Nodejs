@@ -2,20 +2,18 @@ import "reflect-metadata";
 import express, { NextFunction, Request, Response } from "express";
 import "express-async-errors";
 import swaggerUi  from "swagger-ui-express";
-import "../typeorm/index";
-
-// Import de conexão do BD.
-// import "@shared/container/index"
-
-// Import de conexão do BD.
-import { createConnection } from "typeorm";
-
 import { AppError } from "@shared/errors/AppError";
 import { router } from "./routes";
 import swaggerFile from "../../../swagger.json"; // Para este import precisa colocar no arquivo (tsconfig.json), a opção ("resolveJsonModule": true) desse jeito.
 
+// Import de conexão do BD.
+// import "@shared/infra/typeorm/index"
+
+// Import de conexão do BD.
+import createConnection from "@shared/infra/typeorm/index";
+
 // Chamada da funçaõ que conecta o BD.
-createConnection("localhost");
+createConnection();
 
 const app = express();
 
