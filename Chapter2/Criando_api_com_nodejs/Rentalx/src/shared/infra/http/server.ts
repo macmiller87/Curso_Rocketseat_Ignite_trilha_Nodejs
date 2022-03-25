@@ -4,6 +4,7 @@ import "express-async-errors";
 import swaggerUi  from "swagger-ui-express";
 import { AppError } from "@shared/errors/AppError";
 import { router } from "./routes";
+import '@shared/container/index'; // Este import faz o tratamento de injeção de dependências (container), nas rotas da aplicação.
 import swaggerFile from "../../../swagger.json"; // Para este import precisa colocar no arquivo (tsconfig.json), a opção ("resolveJsonModule": true) desse jeito.
 
 // Import de conexão do BD.
