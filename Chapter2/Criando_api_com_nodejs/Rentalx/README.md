@@ -28,13 +28,13 @@ Esse projeto é uma API de cadastro de carros, usuários e controle e aluguel de
 - [x] Não deve ser possível cadastrar um carro com uma placa já existente.
 - [] Não deve ser possível alterar uma placa de um carro já cadastrado.
 - [x] O carro deve ser cadastrado por padrão, com disponibilidade.
-- [] O usuário responsável pelo cadastro deve ser um usuário administrador.
+- [x] O usuário responsável pelo cadastro deve ser um usuário administrador.
 ### Listagem de Carros
 - [] O usuário não precisa estar logado no sistema.
 ### Cadastro de Especificação no Carro
 - [] Não deve ser possível cadastrar uma especificação para um carro não cadastrado.
 - [] Não deve ser possível cadastrar um especificação já existente para o mesmo carro.
-- [] O usuário responsável pelo cadastro deve ser um usuário administrador.
+- [x] O usuário responsável pelo cadastro deve ser um usuário administrador.
 ### Cadastro de Imagens do Carro
 - [] O usuário deve cadastrar mais de uma imagem para o mesmo carro.
 - [] O usuário responsável pelo cadastro deve ser um usuário administrador.
