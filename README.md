@@ -180,3 +180,5 @@ Este repositório ira mostrar as atividades durante a minha trilha de estudos do
 - [Estruturando a Entidade de Carros](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/cars/infra/typeorm/entities/Car.ts)
 - [Criando seed de Usuário](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/shared/infra/typeorm/seed/admin.ts)
 - [Criando Middleware de Administrador](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/shared/infra/http/middlewares/ensureAdmin.ts)
+- [Listando Carros Disponíveis](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/cars/useCases/listAvailableCars)
+- [Continuação da Listagem de Carros Disponíveis](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/cars/useCases/listAvailableCars)
