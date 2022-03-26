@@ -7,10 +7,10 @@ Esse projeto é uma API de cadastro de carros, usuários e controle e aluguel de
 ### Cadastro de Carro
 - [x] Deve ser possível cadastrar um novo carro.
 ### Listagem de Carros
-- [] Deve ser possível listar os carros disponíveis.
-- [] Deve ser possível listar todos os carros desponíveis pelo nome da categoria.
-- [] Deve ser possível listar todos os carros desponíveis pelo nome da marca.
-- [] Deve ser possível listar todos os carros desponíveis pelo nome da carro.
+- [x] Deve ser possível listar os carros disponíveis.
+- [x] Deve ser possível listar todos os carros desponíveis pelo nome da categoria.
+- [x] Deve ser possível listar todos os carros desponíveis pelo nome da marca.
+- [x] Deve ser possível listar todos os carros desponíveis pelo nome da carro.
 ### Cadastro de Especificação do Carro
 - [] Deve ser possível cadastrar uma especificação para um carro.
 - [] Deve ser possível Listar todas as especificações.
@@ -30,7 +30,7 @@ Esse projeto é uma API de cadastro de carros, usuários e controle e aluguel de
 - [x] O carro deve ser cadastrado por padrão, com disponibilidade.
 - [x] O usuário responsável pelo cadastro deve ser um usuário administrador.
 ### Listagem de Carros
-- [] O usuário não precisa estar logado no sistema.
+- [x] O usuário não precisa estar logado no sistema.
 ### Cadastro de Especificação no Carro
 - [] Não deve ser possível cadastrar uma especificação para um carro não cadastrado.
 - [] Não deve ser possível cadastrar um especificação já existente para o mesmo carro.
