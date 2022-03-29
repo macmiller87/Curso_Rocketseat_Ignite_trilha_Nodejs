@@ -13,8 +13,6 @@ Esse projeto é uma API de cadastro de carros, usuários e controle e aluguel de
 - [x] Deve ser possível listar todos os carros desponíveis pelo nome da carro.
 ### Cadastro de Especificação do Carro
 - [] Deve ser possível cadastrar uma especificação para um carro.
-- [] Deve ser possível Listar todas as especificações.
-- [] Deve ser possível listar todos os carros.
 ### Cadastro de Imagens do Carro
 - [] Deve ser possível cadastrar a imagem do carro.
 - [] Deve ser possível listar todos os carros.
