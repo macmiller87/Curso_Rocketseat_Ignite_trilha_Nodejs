@@ -1,4 +1,4 @@
-import { Specification } from "../infra/typeorm/entities/Specification";
+import { Specification } from "@modules/cars/infra/typeorm/entities/Specification";
 
 // Interface DTO com os parametros.
 interface ICreateSpecificationDTO {
@@ -9,7 +9,8 @@ interface ICreateSpecificationDTO {
 // Interface com a passagem dos parametros, método e função create() .
 interface ISpecificationsRepository {
     create({ name, description }: ICreateSpecificationDTO): Promise<void>;
-    findByName(name: string): Promise<Specification>
+    findByName(name: string): Promise<Specification>;
+    findByIds(ids: string[]): Promise<Specification[]>;
 }
 
 export { ISpecificationsRepository, ICreateSpecificationDTO }; 
