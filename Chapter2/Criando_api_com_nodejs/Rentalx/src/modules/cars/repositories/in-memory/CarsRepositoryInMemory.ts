@@ -25,7 +25,7 @@ class CarsRepositoryInMemory implements ICarsRepository {
         return car;
     }
 
-    // Verifica se o carro existe.
+    // Verifica se o carro existe, pela placa.
     async findByLicensePlate(license_plate: string): Promise<Car> {
         
         const car = this.cars.find((car) => car.license_plate === license_plate);
@@ -46,6 +46,12 @@ class CarsRepositoryInMemory implements ICarsRepository {
         });
 
         return carsAvailable;
+    }
+
+    // Verifica se o carro existe pelo ID.
+    async findById(id: string): Promise<Car> {
+        const car = this.cars.find((car) => car.id === id);
+        return car;
     }
 
 }
