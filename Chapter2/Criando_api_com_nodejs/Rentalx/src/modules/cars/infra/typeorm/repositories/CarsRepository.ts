@@ -11,7 +11,7 @@ class CarsRepository implements ICarsRepository {
     }
 
     // Função que cria o carro e seus atributos.
-    async create({ brand, category_id, daily_rate, description, fine_amount, license_plate, name, specifications 
+    async create({ brand, category_id, daily_rate, description, fine_amount, license_plate, name, specifications,id
     }: ICreateCarDTO): Promise<Car> {
 
         const car = this.repository.create({
@@ -22,7 +22,8 @@ class CarsRepository implements ICarsRepository {
             fine_amount,
             license_plate,
             name,
-            specifications
+            specifications,
+            id
         });
 
         await this.repository.save(car);
