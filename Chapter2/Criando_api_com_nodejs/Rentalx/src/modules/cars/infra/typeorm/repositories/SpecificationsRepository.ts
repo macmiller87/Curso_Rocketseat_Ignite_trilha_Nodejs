@@ -7,26 +7,33 @@ class SpecificationsRepository implements ISpecificationsRepository {
 
     private repository: Repository<Specification>;
 
-    constructor() { // Criação do constructor, setando o array com o this ..
+    constructor() { 
         this.repository = getRepository(Specification);
     }
 
     // Método create passando os parametros e a interface (ICreateSpecificationDTO).
-    async create({ name, description }: ICreateSpecificationDTO): Promise<void> {
+    async create({ name, description }: ICreateSpecificationDTO): Promise<Specification> {
         const specification = this.repository.create({
             description,
             name
         });
 
         await this.repository.save(specification);
+
+        return specification;
     }
 
     // Aqui foi criado a função (findByName) com a lógica para encontrar o name se ele se repetir.
     async findByName(name: string): Promise<Specification> {
-        const specification = this.repository.findOne({ name });
+        const specification = await this.repository.findOne({ name });
         return specification;
     }
 
+    // Aqui foi criado a função (findById) para encontar a specificação pelo ID.
+    async findByIds(ids: string[]): Promise<Specification[]> {
+        const specification = await this.repository.findByIds(ids);
+        return specification;
+    }
 }
 
 export { SpecificationsRepository };
