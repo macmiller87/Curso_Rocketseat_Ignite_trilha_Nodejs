@@ -12,7 +12,10 @@ import { UsersRepository } from "@modules/accounts/infra/typeorm/repositories/Us
 import { ICarsRepository } from "@modules/cars/repositories/ICarsRepository";
 import { CarsRepository } from "@modules/cars/infra/typeorm/repositories/CarsRepository";
 
-// Aqui está sendo criado um função tpo um (container), sendo passdo o método (registerSingleton), que recebe como parametro a interface (ICategoriesRepository), na sequência é dado um nome para esse container/função, e passado o (CategoriesRepository), que é a classe.
+import { ICarsImagesRepository } from "@modules/cars/repositories/ICarsImagesRepository";
+import { CarsImagesRepository } from "@modules/cars/infra/typeorm/repositories/CarsImagesRepository";
+
+
 container.registerSingleton<ICategoriesRepository>(
     "CategoriesRepository",
     CategoriesRepository
@@ -32,3 +35,8 @@ container.registerSingleton<ICarsRepository>(
     "CarsRepository",
     CarsRepository
 );
+
+container.registerSingleton<ICarsImagesRepository>(
+    "CarsImagesRepository",
+    CarsImagesRepository
+)
