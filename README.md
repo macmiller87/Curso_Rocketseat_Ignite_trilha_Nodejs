@@ -188,3 +188,6 @@ Este repositório ira mostrar as atividades durante a minha trilha de estudos do
 - [Finalizando o CreateCarSpecificationUseCase](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/cars/useCases/createCarSpecification/CreateCarSpecificationUseCase.ts)
 - [Criando Migrations de Imagens de Carro](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/shared/infra/typeorm/migrations/1648670558448-CreateCarImages.ts)
 - [Caso de Uso do Cadastro de Imagens do Carro](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/cars/useCases/uploadCarImages)
+### Módulo Chapter 4 Aluguel
+
+- [Criando Migration do Aluguel](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/shared/infra/typeorm/migrations/1648756280715-CreateRentals.ts)
