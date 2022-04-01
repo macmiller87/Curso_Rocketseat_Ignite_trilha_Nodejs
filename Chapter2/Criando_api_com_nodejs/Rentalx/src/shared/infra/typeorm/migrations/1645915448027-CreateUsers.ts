@@ -10,7 +10,8 @@ export class CreateUsers1645915448027 implements MigrationInterface {
                 columns: [
                     {
                         name: "id",
-                        type: "uuid"
+                        type: "uuid",
+                        isPrimary: true
                     },
                     {
                         name: "name",
@@ -50,6 +51,5 @@ export class CreateUsers1645915448027 implements MigrationInterface {
 
     public async down(queryRunner: QueryRunner): Promise<void> {
         await queryRunner.dropTable("users");
-
     }
 }
