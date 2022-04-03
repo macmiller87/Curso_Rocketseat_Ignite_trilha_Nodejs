@@ -6,11 +6,13 @@ import utc from "dayjs/plugin/utc"; // Esse import é do (pluggin do utc), para 
 
 // Aqui está sendo setado a lib(dayjs) e a subib(utc).
 dayjs.extend(utc);
+
 interface IRequest {
     user_id:  string;
     car_id: string;
     expected_return_date: Date;
 }
+
 class CreateRentalUseCase {
 
     constructor(private rentalRepository: IRentalsRepository) {}
@@ -33,7 +35,7 @@ class CreateRentalUseCase {
 
         // O aluguel deve ter duração mínima de 24 horas.
         const minimumHour = 24;
-        
+
         const expectedReturnDateFormat = dayjs(expected_return_date).utc().local().format(); // Essa const pega a data que está sendo passada na aplicação, e formata para o padrão (utc).
 
         const dateNow = dayjs().utc().local().format(); // Essa const pega a data atual do sistema, e formata para o padrão (utc).
