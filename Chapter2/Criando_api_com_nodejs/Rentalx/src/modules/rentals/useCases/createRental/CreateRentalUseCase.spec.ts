@@ -1,11 +1,13 @@
 import { AppError } from "@shared/errors/AppError";
 import { RentalsRepositoryInMemory } from "../../repositories/in-memory/RentalsRepositoryInMemory";
 import { CreateRentalUseCase } from "./CreateRentalUseCase";
+import dayjs from "dayjs";
 
 let createRentalUsecase: CreateRentalUseCase;
 let rentalsRepositoryInMemory: RentalsRepositoryInMemory;
 
 describe("Create Rental", () => {
+    const dayAdd24Hours =  dayjs().add(1, "day").toDate(); // Essa const pega a data atual do sistema, e (adiciona + 24 horas ou 1 dia).
 
     beforeEach(() => {
         rentalsRepositoryInMemory = new RentalsRepositoryInMemory()
@@ -18,7 +20,7 @@ describe("Create Rental", () => {
        const rental = await createRentalUsecase.execute({
             user_id: "12345",
             car_id: "121212",
-            expected_return_date: new Date()
+            expected_return_date: dayAdd24Hours
         });
 
         expect(rental).toHaveProperty("id");
@@ -32,13 +34,13 @@ describe("Create Rental", () => {
             await createRentalUsecase.execute({
                 user_id: "12345",
                 car_id: "121212",
-                expected_return_date: new Date()
+                expected_return_date: dayAdd24Hours
             });
 
             await createRentalUsecase.execute({
                 user_id: "12345",
                 car_id: "121212",
-                expected_return_date: new Date()
+                expected_return_date: dayAdd24Hours
             });
         }).rejects.toBeInstanceOf(AppError);
     });
@@ -50,13 +52,24 @@ describe("Create Rental", () => {
             await createRentalUsecase.execute({
                 user_id: "123",
                 car_id: "test",
-                expected_return_date: new Date()
+                expected_return_date: dayAdd24Hours
             });
 
             await createRentalUsecase.execute({
                 user_id: "321",
                 car_id: "test",
-                expected_return_date: new Date()
+                expected_return_date: dayAdd24Hours
+            });
+        }).rejects.toBeInstanceOf(AppError);
+    });
+
+     // Teste que verifica se é possível criar aluguel para um carro com o menos de 24 horas de duração do aluguel.
+    it("Should not be able to create a new rental, with invalid return time", async () => {
+        expect(async () => {
+            await createRentalUsecase.execute({
+                user_id: "123",
+                car_id: "test",
+                expected_return_date: dayjs().toDate()
             });
         }).rejects.toBeInstanceOf(AppError);
     });
