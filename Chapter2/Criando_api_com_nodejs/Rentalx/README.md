@@ -37,6 +37,6 @@ Esse projeto é uma API de cadastro de carros, usuários e controle e aluguel de
 - [x] O usuário responsável pelo cadastro deve ser um usuário administrador.
 
 ### Aluguel de Carro
-- [] O aluguel deve ter duração mínima de 24 horas.
-- [] Não deve ser possível cadastrar um aluguel, caso já exista um aberto para o mesmo usuário.
-- [] Não deve ser possível cadastrar um aluguel, caso já exista um aberto para o mesmo carro.
+- [x] O aluguel deve ter duração mínima de 24 horas.
+- [x] Não deve ser possível cadastrar um aluguel, caso já exista um aberto para o mesmo usuário.
+- [x] Não deve ser possível cadastrar um aluguel, caso já exista um aberto para o mesmo carro.

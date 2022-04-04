@@ -193,3 +193,4 @@ Este repositório ira mostrar as atividades durante a minha trilha de estudos do
 - [Criando Migration do Aluguel](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/shared/infra/typeorm/migrations/1648756280715-CreateRentals.ts)
 - [Criando os Testes do Aluguel](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/rentals/useCases/createRental/CreateRentalUseCase.spec.ts)
 - [Continuação do Cadastro de Aluguel](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/rentals/useCases/createRental)
+- [Trabalhando com Datas com DayJs](https://www.npmjs.com/package/dayjs)
