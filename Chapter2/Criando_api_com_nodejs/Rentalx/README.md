@@ -16,14 +16,14 @@ Esse projeto é uma API de cadastro de carros, usuários e controle e aluguel de
 ### Cadastro de Imagens do Carro
 - [x] Deve ser possível cadastrar a imagem do carro.
 ### Aluguel de Carro
-- [] Deve ser possível cadastrar um aluguel.
+- [x] Deve ser possível cadastrar um aluguel.
 ## :white_check_mark: Requisitos não Funcionais
 ### Cadastro de Imagens do Carro
 - [x] Utilizar o multer para upload dos arquivos.
 ## :white_check_mark: Regra de Negócio
 ### Cadastro de Carro
 - [x] Não deve ser possível cadastrar um carro com uma placa já existente.
-- [] Não deve ser possível alterar uma placa de um carro já cadastrado.
+- [x] Não deve ser possível alterar uma placa de um carro já cadastrado.
 - [x] O carro deve ser cadastrado por padrão, com disponibilidade.
 - [x] O usuário responsável pelo cadastro deve ser um usuário administrador.
 ### Listagem de Carros
@@ -40,3 +40,4 @@ Esse projeto é uma API de cadastro de carros, usuários e controle e aluguel de
 - [x] O aluguel deve ter duração mínima de 24 horas.
 - [x] Não deve ser possível cadastrar um aluguel, caso já exista um aberto para o mesmo usuário.
 - [x] Não deve ser possível cadastrar um aluguel, caso já exista um aberto para o mesmo carro.
+- [x] O Usuário deve estar logado na aplicação.
