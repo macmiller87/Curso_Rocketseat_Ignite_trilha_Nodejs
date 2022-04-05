@@ -1,5 +1,7 @@
 import { container } from "tsyringe"; // // Aqui está sendo usado a função (container), e passado a lib (tsyringe)
 
+import "@shared/container/providers/index" // Import do container do (DayjsDateProvide).
+
 import { ISpecificationsRepository } from "@modules/cars/repositories/ISpecificatiosRepository";
 import { SpecificationsRepository } from "@modules/cars/infra/typeorm/repositories/SpecificationsRepository";
 
@@ -14,6 +16,9 @@ import { CarsRepository } from "@modules/cars/infra/typeorm/repositories/CarsRep
 
 import { ICarsImagesRepository } from "@modules/cars/repositories/ICarsImagesRepository";
 import { CarsImagesRepository } from "@modules/cars/infra/typeorm/repositories/CarsImagesRepository";
+
+import { IRentalsRepository } from "@modules/rentals/repositories/IRentalsRepository";
+import { RentalsRepository } from "@modules/rentals/infra/typeorm/repositories/RentalsRepository";
 
 
 container.registerSingleton<ICategoriesRepository>(
@@ -39,4 +44,9 @@ container.registerSingleton<ICarsRepository>(
 container.registerSingleton<ICarsImagesRepository>(
     "CarsImagesRepository",
     CarsImagesRepository
-)
+);
+
+container.registerSingleton<IRentalsRepository>(
+    "RentalsRepository",
+    RentalsRepository
+);
