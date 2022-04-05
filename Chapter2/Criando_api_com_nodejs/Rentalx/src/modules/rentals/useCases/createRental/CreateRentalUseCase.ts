@@ -1,11 +1,8 @@
+import { IDateProvider } from "@shared/container/providers/DateProvider/IDateProvider";
 import { AppError } from "@shared/errors/AppError";
+import { inject, injectable } from "tsyringe";
 import { Rental } from "../../infra/typeorm/entities/Rental";
 import { IRentalsRepository } from "../../repositories/IRentalsRepository";
-import dayjs from "dayjs";
-import utc from "dayjs/plugin/utc"; // Esse import é do (pluggin do utc), para conseguir manipular a date no formato utc.
-
-// Aqui está sendo setado a lib(dayjs) e a subib(utc).
-dayjs.extend(utc);
 
 interface IRequest {
     user_id:  string;
@@ -13,9 +10,12 @@ interface IRequest {
     expected_return_date: Date;
 }
 
+@injectable()
 class CreateRentalUseCase {
 
-    constructor(private rentalRepository: IRentalsRepository) {}
+    constructor(
+        @inject("RentalsRepository") private rentalRepository: IRentalsRepository,
+        @inject("DayjsDateProvide") private dateProvider: IDateProvider) {}
 
     async execute({ user_id, car_id, expected_return_date }: IRequest): Promise<Rental> {
 
@@ -36,11 +36,11 @@ class CreateRentalUseCase {
         // O aluguel deve ter duração mínima de 24 horas.
         const minimumHour = 24;
 
-        const expectedReturnDateFormat = dayjs(expected_return_date).utc().local().format(); // Essa const pega a data que está sendo passada na aplicação, e formata para o padrão (utc).
+        // Pega a data atual do sistema.
+        const dateNow = this.dateProvider.dateNow();
 
-        const dateNow = dayjs().utc().local().format(); // Essa const pega a data atual do sistema, e formata para o padrão (utc).
-
-        const compare = dayjs(expectedReturnDateFormat).diff(dateNow, "hours"); // Essa const pega as duas datas acima, e faz a comparação enter ela em (horas), que é o parametro que está sendo pedido no momento. (mas existem mais opçoes).
+        // Faz a comparação das datas.
+        const compare = this.dateProvider.compareInHours(dateNow, expected_return_date);
 
         if(compare < minimumHour){
             throw new AppError("Invalid return time!"); 

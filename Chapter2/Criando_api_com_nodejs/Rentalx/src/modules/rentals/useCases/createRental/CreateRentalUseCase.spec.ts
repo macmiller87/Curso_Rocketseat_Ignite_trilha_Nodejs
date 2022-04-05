@@ -1,17 +1,20 @@
 import { AppError } from "@shared/errors/AppError";
+import dayjs from "dayjs";
 import { RentalsRepositoryInMemory } from "../../repositories/in-memory/RentalsRepositoryInMemory";
 import { CreateRentalUseCase } from "./CreateRentalUseCase";
-import dayjs from "dayjs";
+import { DayjsDateProvider } from "@shared/container/providers/DateProvider/implementations/DayjsDateProvider";
 
 let createRentalUsecase: CreateRentalUseCase;
 let rentalsRepositoryInMemory: RentalsRepositoryInMemory;
+let dayJsDateProvider: DayjsDateProvider;
 
 describe("Create Rental", () => {
     const dayAdd24Hours =  dayjs().add(1, "day").toDate(); // Essa const pega a data atual do sistema, e (adiciona + 24 horas ou 1 dia).
 
     beforeEach(() => {
-        rentalsRepositoryInMemory = new RentalsRepositoryInMemory()
-        createRentalUsecase = new CreateRentalUseCase(rentalsRepositoryInMemory);
+        rentalsRepositoryInMemory = new RentalsRepositoryInMemory();
+        dayJsDateProvider = new DayjsDateProvider();
+        createRentalUsecase = new CreateRentalUseCase(rentalsRepositoryInMemory, dayJsDateProvider);
     });
 
     // Testa se é capaz de criar um novo aluguel do carro.
