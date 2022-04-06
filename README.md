@@ -197,6 +197,6 @@ Este repositório ira mostrar as atividades durante a minha trilha de estudos do
 - [Criando Provider para Data](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/shared/container)
 - [Criando CreateRentalController](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/rentals/useCases/createRental/CreateRentalController.ts)
 
-### Testes de Integração
+### Módulo Chapter 4 Testes de Integração
 
 - [Configurando Supertest](https://www.npmjs.com/package/supertest)
