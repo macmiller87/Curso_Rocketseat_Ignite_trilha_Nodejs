@@ -20,7 +20,12 @@ export default async(host = "database"): Promise<Connection> => {
 
   return createConnection(
     Object.assign(defaultOptions, {
-      host,
+      host: process.env.NODE_ENV === 'test' ? "localhost" : host,
+      // Aqui nessa linha está sendo colocado uma verificação para a trabalhar com o BD de teste, no arquivo (package.json), no script de test incluir (NODE_ENV=test), para poder rodar o BD de teste.
+      database: 
+        process.env.NODE_ENV === "test" 
+          ? "rentx_test" 
+          : defaultOptions.database,
     })
   );
-}
+};
