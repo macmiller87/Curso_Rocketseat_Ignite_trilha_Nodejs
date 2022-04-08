@@ -14,7 +14,7 @@ import swaggerFile from "../../../swagger.json"; // Para este import precisa col
 import createConnection from "@shared/infra/typeorm/index";
 
 // Chamada da funçaõ que conecta o BD.
-createConnection();
+createConnection('database');
 
 const app = express();
 
