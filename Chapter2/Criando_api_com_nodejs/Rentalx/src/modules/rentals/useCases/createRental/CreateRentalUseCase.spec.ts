@@ -3,9 +3,11 @@ import dayjs from "dayjs";
 import { RentalsRepositoryInMemory } from "../../repositories/in-memory/RentalsRepositoryInMemory";
 import { CreateRentalUseCase } from "./CreateRentalUseCase";
 import { DayjsDateProvider } from "@shared/container/providers/DateProvider/implementations/DayjsDateProvider";
+import { CarsRepositoryInMemory } from "@modules/cars/repositories/in-memory/CarsRepositoryInMemory";
 
 let createRentalUsecase: CreateRentalUseCase;
 let rentalsRepositoryInMemory: RentalsRepositoryInMemory;
+let carsRepositoryInMemory: CarsRepositoryInMemory;
 let dayJsDateProvider: DayjsDateProvider;
 
 describe("Create Rental", () => {
@@ -13,8 +15,9 @@ describe("Create Rental", () => {
 
     beforeEach(() => {
         rentalsRepositoryInMemory = new RentalsRepositoryInMemory();
+        carsRepositoryInMemory = new CarsRepositoryInMemory();
         dayJsDateProvider = new DayjsDateProvider();
-        createRentalUsecase = new CreateRentalUseCase(rentalsRepositoryInMemory, dayJsDateProvider);
+        createRentalUsecase = new CreateRentalUseCase(rentalsRepositoryInMemory, dayJsDateProvider, carsRepositoryInMemory);
     });
 
     // Testa se é capaz de criar um novo aluguel do carro.
