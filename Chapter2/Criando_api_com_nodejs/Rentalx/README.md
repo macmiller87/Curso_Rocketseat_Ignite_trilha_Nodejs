@@ -43,11 +43,12 @@ Esse projeto é uma API de cadastro de carros, usuários e controle e aluguel de
 - [x] Não deve ser possível cadastrar um aluguel, caso já exista um aberto para o mesmo usuário.
 - [x] Não deve ser possível cadastrar um aluguel, caso já exista um aberto para o mesmo carro.
 - [x] O Usuário deve estar logado na aplicação.
-- [] Ao realizar um aluguel, o status do carro deverá ser alterado para indisponível.
+- [x] Ao realizar um aluguel, o status do carro deverá ser alterado para indisponível.
 ### Devolução de Carro
-- [] Se o Carro for devolvido com menos de 24 horas, deverá ser cobrado diária completa.
-- [] Ao realizar a devolução, o carro deverá ser liberado para ooutro aluguel.
-- [] Ao realizar a devolução, o usuário deverá ser liberado para outro aluguel.
-- [] Ao realizar a devolução, deverá ser calculado o total do aluguel.
-- [] Caso o horário de devolução seja superior ao horário previsto de entrega , deverá ser cobrado multa proporcional aos dias de atraso.
-- [] Caso haja multa, deverá ser somado ao total do aluguel.
+- [x] Se o Carro for devolvido com menos de 24 horas, deverá ser cobrado diária completa.
+- [x] Ao realizar a devolução, o carro deverá ser liberado para outro aluguel.
+- [x] Ao realizar a devolução, o usuário deverá ser liberado para outro aluguel.
+- [x] Ao realizar a devolução, deverá ser calculado o total do aluguel.
+- [x] Caso o horário de devolução seja superior ao horário previsto de entrega , deverá ser cobrado multa proporcional aos dias de atraso.
+- [x] Caso haja multa, deverá ser somado ao total do aluguel.
+- [x] O Usuário deve estar logado na aplicação.
