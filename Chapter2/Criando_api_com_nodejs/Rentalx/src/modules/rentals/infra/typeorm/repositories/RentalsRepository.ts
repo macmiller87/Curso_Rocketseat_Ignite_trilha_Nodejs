@@ -45,6 +45,16 @@ class RentalsRepository implements IRentalsRepository {
         const rental = await this.repository.findOne(id);
         return rental;
     }
+
+    async findByUser(user_id: string): Promise<Rental[]> {
+        // Aqui foi usado o (where) e o (relation), que faz relação com as entidades (Car e Rentals), para facilitar a apresentação dos dados no insomnia.
+        const rental = await this.repository.find({
+            where: { user_id },
+            relations: ["car"]
+        });
+
+        return rental;
+    }
 }
 
 export { RentalsRepository };
