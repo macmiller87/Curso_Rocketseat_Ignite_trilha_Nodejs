@@ -215,3 +215,5 @@ Este repositório ira mostrar as atividades durante a minha trilha de estudos do
 - [Corrigindo Status de um Carro](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/rentals/useCases/createRental)
 - [Caso de Uso de Devolução de Carro](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/rentals/useCases/devolutionRental)
 - [Controller de Devolução de Carro](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/rentals/useCases/devolutionRental/DevolutionRentalController.ts)
+- [Listagem de Aluguéis do Usuário](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/rentals/useCases/listRentalsByUser)
+- [Refatorando a Listagem de Aluguel do Usuário](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/rentals/useCases/listRentalsByUser)

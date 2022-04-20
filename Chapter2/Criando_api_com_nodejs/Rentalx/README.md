@@ -18,7 +18,10 @@ Esse projeto é uma API de cadastro de carros, usuários e controle e aluguel de
 ### Aluguel de Carro
 - [x] Deve ser possível cadastrar um aluguel.
 ### Devolução de Carro
-- [] Deve ser possível realizar a devolução de um carro.
+- [x] Deve ser possível realizar a devolução de um carro.
+
+### Listagem de Alugueis para Usuário
+- [x] Deve ser possível realizar a busca de todos os alugueis para o usuário.
 ## :white_check_mark: Requisitos não Funcionais
 ### Cadastro de Imagens do Carro
 - [x] Utilizar o multer para upload dos arquivos.
@@ -51,4 +54,6 @@ Esse projeto é uma API de cadastro de carros, usuários e controle e aluguel de
 - [x] Ao realizar a devolução, deverá ser calculado o total do aluguel.
 - [x] Caso o horário de devolução seja superior ao horário previsto de entrega , deverá ser cobrado multa proporcional aos dias de atraso.
 - [x] Caso haja multa, deverá ser somado ao total do aluguel.
+- [x] O Usuário deve estar logado na aplicação.
+### Listagem de Alugueis para Usuário
 - [x] O Usuário deve estar logado na aplicação.
