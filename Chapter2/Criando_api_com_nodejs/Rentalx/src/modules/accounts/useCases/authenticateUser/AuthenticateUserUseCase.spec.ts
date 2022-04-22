@@ -37,35 +37,34 @@ describe("Authenticate User", () => {
     });
 
     // Caso de teste que sempre vai passar, exemplo, pois não está fazendo verificação.
-    it("Should not be able to authenticated an nonexistent user", () => {
+    it("Should not be able to authenticated an nonexistent user", async () => {
 
-        expect(async () => {
-            await authenticateUserUseCase.execute({
+        await expect(
+            authenticateUserUseCase.execute({
                 email: "false@email.com",
                 password: "1234"
-            });
-        }).rejects.toBeInstanceOf(AppError);
+            })
+        ).rejects.toEqual(new AppError("Email or password incorrect!"));
     });
 
     // Caso de teste que sempre vai passar, exemplo, pois não está fazendo verificação.
-    it("Should not be able to aunthenticate with incorrect password", () => {
+    it("Should not be able to aunthenticate with incorrect password", async () => {
 
-        expect(async () => {
-            const user: ICreateUserDTO = {
-                driver_license: "9999",
-                email: "user@user.com",
-                password: "1234",
-                name:  "User Test Error"
-            }
+        const user: ICreateUserDTO = {
+            driver_license: "9999",
+            email: "user@user.com",
+            password: "1234",
+            name:  "User Test Error"
+        }
 
-            await createUseUseCase.execute(user);
+        await createUseUseCase.execute(user);
 
-            await authenticateUserUseCase.execute({
+        await expect(
+            authenticateUserUseCase.execute({
                 email: user.email,
                 password: "incorrectPassword"
-            });
-
-        }).rejects.toBeInstanceOf(AppError);
+            })
+        ).rejects.toEqual(new AppError("Email or password incorrect!"));
     });
 
 });

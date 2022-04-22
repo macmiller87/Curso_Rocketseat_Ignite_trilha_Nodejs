@@ -29,20 +29,20 @@ describe("Create Car", () => {
     });
 
     // Teste que verifica se o carro em criação, possui a mesma placa.
-    it("Should not be able to create a car, if already exists a  car with same license plate!", () => {
+    it("Should not be able to create a car, if already exists a  car with same license plate!", async () => {
 
-        expect(async () => {
-            await createCarUseCase.execute({
-                name: "Car 1", 
-                description: "Description Car",
-                daily_rate: 100,
-                license_plate: "ABC-1234",
-                fine_amount: 60,
-                brand: "Brand",
-                category_id: "Category"  
-            });
+        await createCarUseCase.execute({
+            name: "Car 1", 
+            description: "Description Car",
+            daily_rate: 100,
+            license_plate: "ABC-1234",
+            fine_amount: 60,
+            brand: "Brand",
+            category_id: "Category"  
+        });
 
-            await createCarUseCase.execute({
+        await expect(
+            createCarUseCase.execute({
                 name: "Car 2", 
                 description: "Description Car",
                 daily_rate: 100,
@@ -50,8 +50,8 @@ describe("Create Car", () => {
                 fine_amount: 60,
                 brand: "Brand",
                 category_id: "Category"  
-            });  
-        }).rejects.toBeInstanceOf(AppError);
+            })  
+        ).rejects.toEqual(new AppError("Car already exists!"));
     }); 
 
     // Teste que verifica se pode criar um carro com (available/disponibilidade) por (padrão === true).

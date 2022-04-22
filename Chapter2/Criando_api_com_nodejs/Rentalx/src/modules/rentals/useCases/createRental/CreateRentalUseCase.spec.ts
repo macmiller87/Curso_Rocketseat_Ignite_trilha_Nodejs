@@ -23,9 +23,19 @@ describe("Create Rental", () => {
     // Testa se é capaz de criar um novo aluguel do carro.
     it("Should be able to create a new rental", async () => {
 
+       const car = await carsRepositoryInMemory.create({
+           name: "Test",
+           description: "Car Test",
+           daily_rate: 100,
+           license_plate: "test",
+           fine_amount: 40,
+           category_id: "1234",
+           brand: "brand"
+       }); 
+
        const rental = await createRentalUsecase.execute({
             user_id: "12345",
-            car_id: "121212",
+            car_id: car.id,
             expected_return_date: dayAdd24Hours
         });
 
@@ -35,49 +45,49 @@ describe("Create Rental", () => {
 
     // Teste que verifica se não é possível criar um novo aluguel para um carro com (usuário) já existente.
     it("Should not be able to create a new rental, if there is another open to the same user", async () => {
-        expect(async () => {
 
-            await createRentalUsecase.execute({
+        await rentalsRepositoryInMemory.create({
+            car_id: "1111",
+            expected_return_date: dayAdd24Hours,
+            user_id: "12345"
+        });
+
+        await expect(
+            createRentalUsecase.execute({
                 user_id: "12345",
                 car_id: "121212",
                 expected_return_date: dayAdd24Hours
-            });
-
-            await createRentalUsecase.execute({
-                user_id: "12345",
-                car_id: "121212",
-                expected_return_date: dayAdd24Hours
-            });
-        }).rejects.toBeInstanceOf(AppError);
+            })
+        ).rejects.toEqual(new AppError("There's a reantal in progress for use!"));
     });
 
     // Teste que verifica se não é possível criar um novo aluguel para um carro com (carro) já existente.
     it("Should not be able to create a new rental, if there is another open to the same car", async () => {
-        expect(async () => {
 
-            await createRentalUsecase.execute({
-                user_id: "123",
-                car_id: "test",
-                expected_return_date: dayAdd24Hours
-            });
+        await rentalsRepositoryInMemory.create({
+            car_id: "test",
+            expected_return_date: dayAdd24Hours,
+            user_id: "12345"
+        });
 
-            await createRentalUsecase.execute({
+        await expect(
+            createRentalUsecase.execute({
                 user_id: "321",
                 car_id: "test",
                 expected_return_date: dayAdd24Hours
-            });
-        }).rejects.toBeInstanceOf(AppError);
+            })
+        ).rejects.toEqual(new AppError("Car is unavailable"));
     });
 
      // Teste que verifica se é possível criar aluguel para um carro com o menos de 24 horas de duração do aluguel.
     it("Should not be able to create a new rental, with invalid return time", async () => {
-        expect(async () => {
-            await createRentalUsecase.execute({
+        await expect(
+            createRentalUsecase.execute({
                 user_id: "123",
                 car_id: "test",
                 expected_return_date: dayjs().toDate()
-            });
-        }).rejects.toBeInstanceOf(AppError);
+            })
+        ).rejects.toEqual(new AppError("Invalid return time!"));
     });
 
 });
