@@ -220,3 +220,6 @@ Este repositório ira mostrar as atividades durante a minha trilha de estudos do
 - [Criando Documentação com Autenticação em Categoria](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/swagger.json)
 - [Replicando Autenticação para a Documentação](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/swagger.json)
 - [Documentação para Upload de Imagens do Carro](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/swagger.json)
+- Correção dos Testes
+
+### Módulo Chapter 5 Autenticação
