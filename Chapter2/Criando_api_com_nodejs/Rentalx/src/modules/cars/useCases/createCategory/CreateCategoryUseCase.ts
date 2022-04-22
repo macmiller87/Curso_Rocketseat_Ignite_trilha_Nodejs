@@ -18,7 +18,7 @@ class  CreateCategoryUseCase {
         const categoryAlredyExists = await this.categoriesRepository.findByName(name); // Aqui está sendo setado a classe (categoriesRepository), com a função (findByName(name)), que está tratando a validação no arquivo categoriesRepository.ts
 
         if(categoryAlredyExists) {
-            throw new AppError("Category Alredy exists !");
+            throw new AppError("Category Already exists!");
         }
 
         this.categoriesRepository.create({ name, description }); // Aqui está sendo setado a classe (CategoriesRepository) e passando a função create({name, description}) com seus atributos name e description.
