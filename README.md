@@ -223,3 +223,6 @@ Este repositório ira mostrar as atividades durante a minha trilha de estudos do
 - Correção dos Testes
 
 ### Módulo Chapter 5 Autenticação
+
+- [Refresh Token (Migration de Users Token)](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/shared/infra/typeorm/migrations/1650660787817-CreateUsersToken.ts)
+- [Repositório de Refresh Token](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/accounts/infra/typeorm/repositories/UsersTokensRepository.ts)
