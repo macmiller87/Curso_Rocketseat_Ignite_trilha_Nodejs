@@ -5,6 +5,7 @@ import { usersRoutes } from "./users.routes";
 import { authenticateRoutes } from "./authenticate.routes";
 import { carsRoutes } from "./cars.routes";
 import { rentalRoutes } from "./rental.routes";
+import { passwordRoutes } from "./password.routes";
 
 const router = Router();
 
@@ -25,5 +26,8 @@ router.use("/cars", carsRoutes);
 
 // Rota de criação do aluguel.
 router.use("/rentals", rentalRoutes);
+
+// Rota de envio de email para recuperação de senha.
+router.use("/password", passwordRoutes);
 
 export { router };
