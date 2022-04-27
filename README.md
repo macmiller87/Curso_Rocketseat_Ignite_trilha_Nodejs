@@ -229,3 +229,8 @@ Este repositório ira mostrar as atividades durante a minha trilha de estudos do
 - [Refatorando Autenticação do Usuário](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/accounts/useCases/authenticateUser/AuthenticateUserUseCase.ts)
 - [Criando Caso de Uso do Refresh Token](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/accounts/useCases/refreshToken)
 - [Controller do Refresh Token](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/accounts/useCases/refreshToken/RefreshTokenController.ts)
+
+### Módulo Chapter 5 Recuperação de Senha
+
+- [Criando caso de uso do sendForgotPasswordMail](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/accounts/useCases/sendForgotPasswordMail)
+- [Criando Provider de e-mail](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/shared/container/providers/MailProvider/implementations/EtherealMailProvider.ts)
