@@ -5,6 +5,7 @@ import { IMailProvider } from "@shared/container/providers/MailProvider/IMailPro
 import { AppError } from "@shared/errors/AppError";
 import { inject, injectable } from "tsyringe";
 import { v4 as uuidV4 } from "uuid";
+import { resolve } from "path";
 
 @injectable()
 class SendForgotPasswordMailUseCase {
@@ -18,6 +19,9 @@ class SendForgotPasswordMailUseCase {
 
     async execute(email: string): Promise<void> {
         const user = await this.usersRepository.findByEmail(email);
+
+        // Aqui está sendo passado o caminho na aplicação onde está sendo estilizado o corpo do (email).
+        const templatePath = resolve(__dirname, "..", "..", "views", "emails", "forgotPassword.hbs");
 
         if(!user) {
             throw new AppError("User does not exists!");
@@ -36,11 +40,19 @@ class SendForgotPasswordMailUseCase {
             expires_date  
         });
 
+        // Aqui está sendo passado o (name) do usuário e a (url) para o reset da senha.
+        const variables = {
+            name: user.name,
+            link: `${process.env.FORGOT_MAIL_URL}${token}`
+        }
+
         // Envia o email de recuperação de senha.
         await this.etherealMailProvider.sendMail(email, 
-            "Recuperação de senha", `O Link para o reset è ${token}` 
+            "Recuperação de senha",
+            variables, // reapassdo ao corpo do email.
+            templatePath // reapassdo ao corpo do email.
         );
     }
 }
 
-export { SendForgotPasswordMailUseCase };
+export { SendForgotPasswordMailUseCase }; 

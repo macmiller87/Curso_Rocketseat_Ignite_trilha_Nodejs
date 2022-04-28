@@ -1,6 +1,8 @@
 import { injectable } from "tsyringe";
 import { IMailProvider } from "../IMailProvider";
 import nodemailer, { Transporter } from "nodemailer";
+import handlebars from "handlebars";
+import fs from "fs";
 
 @injectable()
 class EtherealMailProvider implements IMailProvider {
@@ -28,13 +30,22 @@ class EtherealMailProvider implements IMailProvider {
     }
 
     // Cria o corpo do email.
-    async sendMail(to: string, subject: string, body: string): Promise<void> {
+    async sendMail(to: string, subject: string, variables: any, path: string): Promise<void> {
+
+        // Aqui está sendo pego o corpo do email, e convertido para (string) com o (fs).
+        const templateFileContent = fs.readFileSync(path).toString("utf-8");
+
+        // Aqui está sendo utilizado o (templateParse), com (handlebars.compile) para compilar a string acima.
+        const templateParse = handlebars.compile(templateFileContent);
+
+        // Aqui está sendo passado o conteúdo compilado acima para dentro ad (variables).
+        const templateHTML = templateParse(variables);
+
         const message = await this.client.sendMail({
             to,
             from: "Rentx <noreplay@rentx.com.br>",
             subject,
-            text: body,
-            html: body
+            html: templateHTML // Aqui repassando ao corpo do email.
         });
 
         // Traz o (ID) do email de recuperação de senha no terminal.
