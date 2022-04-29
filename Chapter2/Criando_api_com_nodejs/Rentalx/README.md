@@ -23,8 +23,8 @@ Esse projeto é uma API de cadastro de carros, usuários e controle e aluguel de
 - [x] Deve ser possível realizar a busca de todos os alugueis para o usuário.
 ### Recuperar Senha
 - [x] Deve ser possível o usuário recuperar a senha informando o email.
-- [] O Usuário deve receber um email com o passo a passo para a recuperação da senha.
-- [] O Usuário deve conseguir inserir uma nove senha.
+- [x] O Usuário deve receber um email com o passo a passo para a recuperação da senha.
+- [x] O Usuário deve conseguir inserir uma nove senha.
 ## :white_check_mark: Requisitos não Funcionais
 ### Cadastro de Imagens do Carro
 - [x] Utilizar o multer para upload dos arquivos.
@@ -60,5 +60,5 @@ Esse projeto é uma API de cadastro de carros, usuários e controle e aluguel de
 ### Listagem de Alugueis para Usuário
 - [x] O Usuário deve estar logado na aplicação.
 ### Recuperar Senha 
-- [] O Usuário deve receber um email com o passo a passo para recuperação da senha.
+- [x] O Usuário deve receber um email com o passo a passo para recuperação da senha.
 - [x] O Link enviado para a recuperação deve expiarar em 3 horas.
