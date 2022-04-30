@@ -21,7 +21,7 @@ class  CreateCategoryUseCase {
             throw new AppError("Category Already exists!");
         }
 
-        this.categoriesRepository.create({ name, description }); // Aqui está sendo setado a classe (CategoriesRepository) e passando a função create({name, description}) com seus atributos name e description.
+       await this.categoriesRepository.create({ name, description }); // Aqui está sendo setado a classe (CategoriesRepository) e passando a função create({name, description}) com seus atributos name e description.
     }
 }
 
