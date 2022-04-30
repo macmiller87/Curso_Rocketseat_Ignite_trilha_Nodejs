@@ -3,17 +3,28 @@ import { ICreateUserDTO } from "@modules/accounts/dtos/ICreateUserDTO"
 import { UsersRepositoryInMemory } from "@modules/accounts/repositories/in-memory/UsersRepositoryInMemory";
 import { CreateUserUseCase } from "../createUser/CreateUserUseCase";
 import { AuthenticateUserUseCase } from "./AuthenticateUserUseCase";
+import { UsersTokensRepositoryInMemory } from "@modules/accounts/repositories/in-memory/UsersTokensRepositoryInMemory";
+import { DayjsDateProvider } from "@shared/container/providers/DateProvider/implementations/DayjsDateProvider";
 
-let authenticateUserUseCase:  AuthenticateUserUseCase;
+let authenticateUserUseCase: AuthenticateUserUseCase;
 let usersRepositoryInMemory: UsersRepositoryInMemory;
-let createUseUseCase: CreateUserUseCase;
+let usersTokensRepositoryInMemory: UsersTokensRepositoryInMemory;
+let dayjsDateProvider: DayjsDateProvider;
+let createUserUseCase: CreateUserUseCase;
 
 describe("Authenticate User", () => {
 
     beforeEach(() => {
         usersRepositoryInMemory = new UsersRepositoryInMemory();
-        authenticateUserUseCase = new AuthenticateUserUseCase(usersRepositoryInMemory);
-        createUseUseCase = new CreateUserUseCase(usersRepositoryInMemory);
+        usersTokensRepositoryInMemory = new UsersTokensRepositoryInMemory();
+        dayjsDateProvider = new DayjsDateProvider();
+
+        authenticateUserUseCase = new AuthenticateUserUseCase(
+            usersRepositoryInMemory,
+            usersTokensRepositoryInMemory,
+            dayjsDateProvider,
+        );
+        createUserUseCase = new CreateUserUseCase(usersRepositoryInMemory);
     });
 
     // Cria e autentica o usuário.
@@ -26,7 +37,7 @@ describe("Authenticate User", () => {
             name: "User Test"
         };
 
-        await createUseUseCase.execute(user);
+        await createUserUseCase.execute(user);
 
         const result = await authenticateUserUseCase.execute({
             email: user.email,
@@ -57,7 +68,7 @@ describe("Authenticate User", () => {
             name:  "User Test Error"
         }
 
-        await createUseUseCase.execute(user);
+        await createUserUseCase.execute(user);
 
         await expect(
             authenticateUserUseCase.execute({
