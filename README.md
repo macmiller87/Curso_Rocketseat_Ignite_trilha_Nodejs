@@ -236,3 +236,7 @@ Este repositório ira mostrar as atividades durante a minha trilha de estudos do
 - [Criando Provider de e-mail](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/shared/container/providers/MailProvider/implementations/EtherealMailProvider.ts)
 - [Inserindo Template Engine para Envio de e-mail](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/accounts/views/emails/forgotPassword.hbs)
 - [Criando caso de uso de Reset da Senha](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/accounts/useCases/resetPasswordUser)
+
+### Módulo Chapter 5 Testes
+
+- Refatorando Testes
