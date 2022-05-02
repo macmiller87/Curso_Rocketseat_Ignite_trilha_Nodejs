@@ -240,3 +240,5 @@ Este repositório ira mostrar as atividades durante a minha trilha de estudos do
 ### Módulo Chapter 5 Testes
 
 - Refatorando Testes
+- [Testando Envio de e-mail](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/accounts/useCases/sendForgotPasswordMail/SendForgotPasswordMailUseCase.spec.ts)
+- [Coverage Report](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/jest.config.ts)
