@@ -3,9 +3,9 @@ import { sign } from "jsonwebtoken";
 import { inject, injectable } from "tsyringe";
 import { AppError } from "@shared/errors/AppError";
 import { IUsersRepository } from "@modules/accounts/repositories/IUsersRepository";
-import { UsersTokensRepository } from "@modules/accounts/infra/typeorm/repositories/UsersTokensRepository";
 import auth from "@config/auth";
 import { IDateProvider } from "@shared/container/providers/DateProvider/IDateProvider";
+import { IUsersTokensRepository } from "@modules/accounts/repositories/IUsersTokensRepository";
 
 interface IRequest {
     email: string;
@@ -26,7 +26,7 @@ interface IResponse {
 class AuthenticateUserUseCase {  
     constructor(
         @inject("UsersRepository") private userRepository: IUsersRepository,
-        @inject("UsersTokensRepository") private usersTokensRepository: UsersTokensRepository,
+        @inject("UsersTokensRepository") private usersTokensRepository: IUsersTokensRepository,
         @inject("DayjsDateProvider") private dayjsDateProvider: IDateProvider
     ) {}
 
