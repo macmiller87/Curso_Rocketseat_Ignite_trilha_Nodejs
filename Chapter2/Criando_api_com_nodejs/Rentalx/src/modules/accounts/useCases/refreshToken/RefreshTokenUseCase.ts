@@ -10,6 +10,12 @@ interface IPayload {
     email: string;
 }
 
+interface ITokemResponse {
+    refresh_token: string;
+    token: string;
+    
+}
+
 @injectable()
 class RefreshTokenUseCase {
 
@@ -18,7 +24,7 @@ class RefreshTokenUseCase {
         @inject("DayjsDateProvider") private dayjsDateProvider: IDateProvider
     ) {}
 
-    async execute(token: string): Promise<string> {
+    async execute(token: string): Promise<ITokemResponse> {
         
         // Recebe os parametros da interface, e a função (verify), faz a verificação se o token existe pelo (email eo sub). 
         const { email, sub } = verify(token, auth.secret_refresh_token) as IPayload;
@@ -52,7 +58,17 @@ class RefreshTokenUseCase {
             expires_date 
         });
 
-        return refresh_token;
+        // Aqui está sendo passado os parametros necessários para criar o newToken.
+        const newToken = sign({}, auth.secret_token, {
+            subject: user_id,
+            expiresIn: auth.expires_in_token 
+        });
+
+        // Retorno que vai aparecer no (insomnia).
+        return {
+            refresh_token,
+            token: newToken
+        }
     }
 }
 

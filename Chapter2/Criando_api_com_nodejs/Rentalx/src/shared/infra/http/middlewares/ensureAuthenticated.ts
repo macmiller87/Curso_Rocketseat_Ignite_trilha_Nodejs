@@ -15,7 +15,6 @@ export async function ensureAuthenticated(req: Request, res: Response, next: Nex
 
     // Nessa const, vai ser passado o token, via header de rota, usando a função de verificação da rota (Barer), no insommnia, também está sendo usado a função (authorization), que é nativa do express, elá vai fazer a comparação se o token exist.
     const authHeader = req.headers.authorization;
-    const userTokensRepository = new UsersTokensRepository();
 
     if(!authHeader) {
         throw new AppError("Token missing!", 401);
@@ -28,19 +27,13 @@ export async function ensureAuthenticated(req: Request, res: Response, next: Nex
     // Exemplo de como estava => const { sub: user_id } = verify(token, "7c3ef5a44d0cae90dc699db22182a57c") as IPayload; 
 
     try {
-      const { sub: user_id } = verify(token, auth.secret_refresh_token) as IPayload;      
+      const { sub: user_id } = verify(token, auth.secret_token) as IPayload;      
         
       // Aqui está sendo chamado o arquivo (UsersRepository), para poder dar acesso a implementação que está sendo tratada la, no caso a verificação do (id), do usuário, se existe no BD. 
      // Exemplo de como estava => const usersRepository = new UsersRepository(); 
 
       // Aqui está sendo comparado se o id existe no BD, como mencionado acima.
       // Exemplo de como estava =>const user = await usersRepository.findById(user_id);
-
-      const user = await userTokensRepository.findByUserIdAndRefreshToken(user_id, token);
-
-      if(!user) {
-          throw new AppError("User does not exists!", 401);
-      }
 
       
       // Aqui foi passado essa requisição para poder atender a classe (updateUserAvatarController), o arquivo de mesmo nome, (obs: necessitou sobreescrever a tipagem do express no arquivo index.d.ts na pasta @types)
