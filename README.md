@@ -246,3 +246,13 @@ Este repositório ira mostrar as atividades durante a minha trilha de estudos do
 ## Desafio: Transferências com a FinApi
 
 - [Projeto API Financeira ( FinApi )](https://github.com/macmiller87/Curso_Rocketseat_Ignite_Desafio_Testes_Unitarios)
+
+# Módulo Chapter 6 Refresh Token
+
+- Introdução
+- [Corrigindo o Refresh Token](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/accounts/useCases/refreshToken/RefreshTokenUseCase.ts)
+
+### Módulo Chapter 6 Configuração do AWS
+
+- [Criar conta no AWS](https://aws.amazon.com/pt/free/?sc_icampaign=acq_freetier&sc_ichannel=ha&sc_icontent=awssm-evergreen_aware_prospect&sc_iplace=hero&trk=~ha_awssm-evergreen_aware_prospect&refid=ha_awssm-evergreen-1st-visit&all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all)
+- [SSH no Windows](https://www.notion.so/SSH-no-Windows-c6091c09aeca4555b0bbe00447a8ebd8)
