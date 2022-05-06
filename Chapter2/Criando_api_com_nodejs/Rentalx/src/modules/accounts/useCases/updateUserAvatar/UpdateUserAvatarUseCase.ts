@@ -1,6 +1,6 @@
 import { inject, injectable } from "tsyringe";
-import { deleteFile } from "@utils/file";
 import { IUsersRepository } from "@modules/accounts/repositories/IUsersRepository";
+import { IStorageProvider } from "@shared/container/providers/StorageProvider/IStoregeProvider";
 
 interface IRequest {
     user_id:  string;
@@ -9,15 +9,21 @@ interface IRequest {
 
 @injectable()
 class UpdateUserAvatarUseCase {
-    constructor(@inject("UsersRepository") private usersRepository: IUsersRepository) {}
+    constructor(
+        @inject("UsersRepository") private usersRepository: IUsersRepository,
+        @inject("StorageProvider") private storageProvider: IStorageProvider
+    ) {}
 
     async execute({ user_id, avatar_File }: IRequest): Promise<void> {
         const user =  await this.usersRepository.findById(user_id);
 
+        // Deleta o avatar na pasta (avatar), se o mesmo já existir
         if(user.avatar) {
-            
-            await deleteFile(`./tmp/avatar/${user.avatar}`); // Aqui está chamando a função (deleteFile), que tem a função de verificar se o arquivo de upload já existe, se der falso, então o fluxo aqui segue, (obs: esse cara aqui (./tmp/avatar/) é o endereço da pasta onde está sendo salvo o avatar)
+            await this.storageProvider.delete(user.avatar, "avatar");
         }
+
+        // Salva o avatar na pasta (avatar)
+        await this.storageProvider.save(avatar_File, "avatar");
 
         // Aqui está refeenciando a coluna da tabela (users)
         user.avatar = avatar_File;
