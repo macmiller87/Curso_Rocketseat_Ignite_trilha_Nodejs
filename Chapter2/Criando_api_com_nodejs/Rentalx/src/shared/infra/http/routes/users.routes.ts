@@ -7,7 +7,7 @@ import { UpdateUserAvatarController } from "@modules/accounts/useCases/updateUse
 
 const usersRoutes = Router();
 
-const uploadAvatar = multer(uploadConfig.upload("./tmp/avatar")); // Essa const está recebendo, o import da função de (uploadConfig) e a localização da pasta e arquivo (TMP/avatar).
+const uploadAvatar = multer(uploadConfig); // Essa const está recebendo, o import da função de (uploadConfig).
 
 const createUserController = new CreateUserController();
 const updateUserAvatarController = new UpdateUserAvatarController();

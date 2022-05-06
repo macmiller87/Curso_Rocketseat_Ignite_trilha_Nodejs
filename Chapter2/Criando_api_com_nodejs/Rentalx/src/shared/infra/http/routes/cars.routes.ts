@@ -15,7 +15,7 @@ const listAvailableCarsController = new ListAvailableCarsController();
 const createCarSpecificationController = new CreateCarSpecificationController();
 const uploadCarImagesController = new UploadCarImagesController();
 
-const upload = multer(uploadConfig.upload("./tmp/cars")); // Essa const está recebendo, o import da função de (uploadConfig) e a localização da pasta e arquivo (TMP/cars).
+const upload = multer(uploadConfig); // Essa const está recebendo, o import da função de (uploadConfig).
 
 // Rota de criação do carro, aqui nessa rota está sendo passado as duas funções middlewares para verificar se o usuário está autenticado e se é administrador.
 carsRoutes.post("/", ensureAuthenticated, ensureAdmin, createCarController.handle);
