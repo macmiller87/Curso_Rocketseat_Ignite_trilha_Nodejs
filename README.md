@@ -256,3 +256,5 @@ Este repositório ira mostrar as atividades durante a minha trilha de estudos do
 
 - [Criar conta no AWS](https://aws.amazon.com/pt/free/?sc_icampaign=acq_freetier&sc_ichannel=ha&sc_icontent=awssm-evergreen_aware_prospect&sc_iplace=hero&trk=~ha_awssm-evergreen_aware_prospect&refid=ha_awssm-evergreen-1st-visit&all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all)
 - [SSH no Windows](https://www.notion.so/SSH-no-Windows-c6091c09aeca4555b0bbe00447a8ebd8)
+- Criação do Usuário e S3
+- [Provider de Upload](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/shared/container/providers/StorageProvider/implementations/LocalStorageProvider.ts)
