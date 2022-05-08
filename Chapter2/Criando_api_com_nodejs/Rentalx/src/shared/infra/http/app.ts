@@ -13,6 +13,7 @@ import swaggerFile from "../../../swagger.json"; // Para este import precisa col
 
 // Import de conexão do BD.
 import createConnection from "@shared/infra/typeorm/index";
+import upload from "@config/upload";
 
 // Chamada da funçaõ que conecta o BD.
 createConnection('database');
@@ -22,6 +23,13 @@ const app = express();
 app.use(express.json()); // Aqui está sendo setado o express.json, para poder usar.
 
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerFile)); // Aqui está sendo setado os parametros padrão para utilização so swwager.
+
+// Rota  para expor(visualizar) as imagens de (avatar) quando são salvas (local);
+app.use("/avatar", express.static(`${upload.tmpFolder}/avatar`));
+
+// Rota  para expor(visualizar) as imagens de (cars) quando são salvas (local);
+app.use("/cars", express.static(`${upload.tmpFolder}/cars`));
+
 
 app.use(router); 
 
