@@ -1,15 +1,10 @@
 {
   "compilerOptions": {
-   
     "target": "es2016",
-
      "experimentalDecorators": true,                   
      "emitDecoratorMetadata": true, 
-
     "module": "commonjs",
-
-    "rootDir": "./",    
-
+    "rootDir": "./",
     "baseUrl": "./src",                              
     "paths": {
       "@modules/*": ["modules/*"],
@@ -18,16 +13,10 @@
       "@errors/*": ["errors/*"],
       "@utils/*": ["utils/*"]
     },                                  
-
      "resolveJsonModule": true,                        
-  
      "outDir": "./dist",                               
-    
-    "esModuleInterop": true,
-                              
-    "forceConsistentCasingInFileNames": true,           
-
+    "esModuleInterop": true,                 
+    "forceConsistentCasingInFileNames": true,      
     "skipLibCheck": true 
-  
   }
 }
