@@ -48,7 +48,6 @@ class ImportCategoryUseCase {
          async execute(file: Express.Multer.File): Promise<void> { // Aqui foi criado a função (execute) passando o (file: Express.Multer.File) como parametro, usando o async por causa que a classe é uma função Promisse.
 
             const categories = await this.loadCategories(file); // Aqui está sendo usado o await, para aguardar a Promisse ser resolvida.
-            console.log(categories);
 
             // Aqui foi craido essa logica para verificar se o (name e a description) existe ou não.
             categories.map(async (category) => {
