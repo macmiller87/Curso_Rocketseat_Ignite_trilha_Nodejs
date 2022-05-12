@@ -241,7 +241,7 @@ Este repositório ira mostrar as atividades durante a minha trilha de estudos do
 
 - Refatorando Testes
 - [Testando Envio de e-mail](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/modules/accounts/useCases/sendForgotPasswordMail/SendForgotPasswordMailUseCase.spec.ts)
-- [Coverage Report](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter2/Criando_api_com_nodejs/Rentalx/coverage/lcov-report)
+- Coverage Report
 
 ## Desafio: Transferências com a FinApi
 
@@ -268,3 +268,8 @@ Este repositório ira mostrar as atividades durante a minha trilha de estudos do
 - Estratégias de Deploy
 - Criando Instância na AWS
 - Configurando Instância
+- [Configurando o Babel na Aplicação](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/babel.config.js)
+
+### Módulo Chapter 6 Deploy
+
+- Aplicação no Github
