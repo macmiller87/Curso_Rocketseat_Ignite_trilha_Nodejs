@@ -1,3 +1,7 @@
 node_modules
 yarn.lock
 .env
+coverage
+.vscode
+dist
+ormconfig.json
