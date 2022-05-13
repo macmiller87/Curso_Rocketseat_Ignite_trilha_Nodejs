@@ -273,3 +273,6 @@ Este repositório ira mostrar as atividades durante a minha trilha de estudos do
 ### Módulo Chapter 6 Deploy
 
 - Aplicação no Github
+- Clonando Aplicação para Deploy
+- Configurando o Banco de Dados
+- Alterando a Configuração do Banco de Dados
