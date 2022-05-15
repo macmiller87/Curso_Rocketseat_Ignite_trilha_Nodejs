@@ -276,3 +276,7 @@ Este repositório ira mostrar as atividades durante a minha trilha de estudos do
 - Clonando Aplicação para Deploy
 - Configurando o Banco de Dados
 - Alterando a Configuração do Banco de Dados
+
+### Módulo Chapter 6 CI/CD
+
+- [Criando Github Actions](https://github.com/macmiller87/API_Ignite_Rentx/blob/main/.github/workflows/main.yml)
