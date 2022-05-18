@@ -283,3 +283,4 @@ Este repositório ira mostrar as atividades durante a minha trilha de estudos do
 - [Configurando Proxy Reverso](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-application-for-production-on-ubuntu-16-04#step-5-setting-up-nginx-as-a-reverse-proxy-server)
 - [Configurando PM2 na Aplicação](https://pm2.keymetrics.io/)
 - [Finalizando Configurações das Actions](https://github.com/macmiller87/API_Ignite_Rentx/blob/main/.github/workflows/main.yml)
+- [Configurando Domínio e SSL](https://certbot.eff.org/)
