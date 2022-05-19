@@ -284,3 +284,8 @@ Este repositório ira mostrar as atividades durante a minha trilha de estudos do
 - [Configurando PM2 na Aplicação](https://pm2.keymetrics.io/)
 - [Finalizando Configurações das Actions](https://github.com/macmiller87/API_Ignite_Rentx/blob/main/.github/workflows/main.yml)
 - [Configurando Domínio e SSL](https://certbot.eff.org/)
+
+### Módulo Chapter 6 Segurança
+
+- [Configurando Rate Limiter](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/shared/infra/http/middlewares/rateLimiter.ts)
+- [Configurando Sentry](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/shared/infra/http/app.ts)
