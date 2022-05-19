@@ -13,6 +13,11 @@ services:                           # Definição do serviço.
       - POSTGRES_DB=rentx           # Definição do nome do contaner do BD no docker.
     volumes:                        # Aqui é padrão para indicar o volume do container no docker.
       - pgdata:/data/postgres       # Aqui tem relação com o container app abaixo.
+
+  redis: 
+    image: redis:alpine # Nome da imagem do container do docker.
+    ports: 
+      - 6379:6379       # Porta padrão do Redis   
           
 
   app:                              # Nome do container da aplicação.
