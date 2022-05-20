@@ -292,7 +292,7 @@ Este repositório ira mostrar as atividades durante a minha trilha de estudos do
 
 ### Módulo Chapter 6 Serverless
 
-#### [Apartir daqui todos os tópicos a seguir fazem parte da Aplicação Serverless (CertificateIgnite) que se encontra na pasta (chapter6/CertificateIgnite)](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter6/certificateignite)
+#### [Apartir daqui todos os tópicos a seguir fazem parte da Aplicação Serverless ( CertificateIgnite ) que se encontra na pasta (chapter6/CertificateIgnite)](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter6/certificateignite)
 
 - O que é Serverless
 - [Conhecendo o Serverless Framework](https://www.serverless.com/)
