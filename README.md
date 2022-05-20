@@ -49,7 +49,7 @@ Este repositório ira mostrar as atividades durante a minha trilha de estudos do
 - [Definindo os parâmetros obrigatórios](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter2/Criando_projeto_com_typescript)
 
 ### Módulo Chapter 2 Criando API com NodeJS 
-#### [Apartir daqui todos os tópicos a seguir fazem parte da API RENTALX que se encontra na pasta (chapter2/criando_api_com_nodejs/rentalx)](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter2/Criando_api_com_nodejs/Rentalx)
+#### [Apartir daqui todos os tópicos a seguir fazem parte da ( API RENTALX ) que se encontra na pasta (chapter2/criando_api_com_nodejs/rentalx)](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter2/Criando_api_com_nodejs/Rentalx)
 
 - [Configurando ts-node-dev](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/package.json)
 - [ESLint e Prettier](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter2/Criando_api_com_nodejs/Eslint_e_Prettier_no%20Nodejs)
@@ -289,3 +289,12 @@ Este repositório ira mostrar as atividades durante a minha trilha de estudos do
 
 - [Configurando Rate Limiter](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/shared/infra/http/middlewares/rateLimiter.ts)
 - [Configurando Sentry](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter2/Criando_api_com_nodejs/Rentalx/src/shared/infra/http/app.ts)
+
+### Módulo Chapter 6 Serverless
+
+#### [Apartir daqui todos os tópicos a seguir fazem parte da Aplicação Serverless (CertificateIgnite) que se encontra na pasta (chapter6/CertificateIgnite)](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter6/certificateignite)
+
+- O que é Serverless
+- [Conhecendo o Serverless Framework](https://www.serverless.com/)
+- [Criando Projeto Serverless](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter6/certificateignite)
+- [Criando Primeira Function](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter6/certificateignite/src/functions/hello.ts)
