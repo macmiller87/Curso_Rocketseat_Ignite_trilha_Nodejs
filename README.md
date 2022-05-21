@@ -298,3 +298,6 @@ Este repositório ira mostrar as atividades durante a minha trilha de estudos do
 - [Conhecendo o Serverless Framework](https://www.serverless.com/)
 - [Criando Projeto Serverless](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/tree/main/Chapter6/certificateignite)
 - [Criando Primeira Function](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter6/certificateignite/src/functions/hello.ts)
+- Conhecendo o DynamoDB
+- [Implementando o DynamoDB](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter6/certificateignite/serverless.ts)
+- [Criando a Function de Gerar Certificado](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter6/certificateignite/src/functions/generateCertificate.ts)
