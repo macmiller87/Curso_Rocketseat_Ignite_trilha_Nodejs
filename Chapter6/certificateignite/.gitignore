@@ -1,6 +1,8 @@
 # package directories
 node_modules
 jspm_packages
+yarn.lock
+.dynamodb
 
 # Serverless directories
 .serverless
