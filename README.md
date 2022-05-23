@@ -301,3 +301,5 @@ Este repositório ira mostrar as atividades durante a minha trilha de estudos do
 - Conhecendo o DynamoDB
 - [Implementando o DynamoDB](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter6/certificateignite/serverless.ts)
 - [Criando a Function de Gerar Certificado](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter6/certificateignite/src/functions/generateCertificate.ts)
+- Deploy na AWS
+- [Criando template](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter6/certificateignite/src/functions/generateCertificate.ts)
