@@ -19,7 +19,7 @@ const serverlessConfiguration: AWS = {
       AWS_NODEJS_CONNECTION_REUSE_ENABLED: '1',
       NODE_OPTIONS: '--enable-source-maps --stack-trace-limit=1000',
     },
-    // Permissôes para rodar o (dinamodb na aws)
+    // Permissôes para rodar o (dinamodb na aws), e para criar a instância (S3 AWS).
     lambdaHashingVersion: '20201221',
     iamRoleStatements: [
       {
@@ -28,6 +28,11 @@ const serverlessConfiguration: AWS = {
         Resource: ["*"]
 
       },
+      {
+        Effect: "Allow",
+        Action: ["s3:*"],
+        Resource: ["*"]
+      }
     ],
   },
   // import the function via paths
@@ -51,7 +56,7 @@ const serverlessConfiguration: AWS = {
       bundle: true,
       minify: false,
       sourcemap: true,
-      exclude: ['aws-sdk'],
+      exclude: ['aws-sdk', "chrome-aws-lambda"],
       target: 'node14',
       define: { 'require.resolve': undefined },
       platform: 'node',
