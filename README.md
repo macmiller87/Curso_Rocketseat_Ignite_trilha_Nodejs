@@ -305,3 +305,9 @@ Este repositório ira mostrar as atividades durante a minha trilha de estudos do
 - [Criando template](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter6/certificateignite/src/functions/generateCertificate.ts)
 - [Convertendo para PDF](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter6/certificateignite/src/functions/generateCertificate.ts)
 - Salvando Certificado no S3
+- [Criando a Function de Validação do Certificado](https://github.com/macmiller87/Curso_Rocketseat_Ignite_trilha_Nodejs/blob/main/Chapter6/certificateignite/src/functions/verifyCertificate.ts)
+- Deploy da Aplicação Final
+
+### Módulo Chapter 6 Microsserviços
+
+- Microsserviços
