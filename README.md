@@ -311,3 +311,7 @@ Este repositório ira mostrar as atividades durante a minha trilha de estudos do
 ### Módulo Chapter 6 Microsserviços
 
 - Microsserviços
+
+## Desafio: Construindo com Serverless
+
+- [Projeto API Serverless Framework gerenciador de tarefas ( Todo )](https://github.com/macmiller87/Curso_Rocketseat_Ignite_Desafio_Construindo_Com_Serverless)
